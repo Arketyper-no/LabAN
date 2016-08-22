@@ -1,0 +1,1015 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Svarrapport</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<style type="text/css"><!--*/-->  
+
+/*Inngår i Hdirs visningsfiler versjon 1.0*/
+
+body
+{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+@media screen {
+	
+	.Top {
+	width:95%;
+	margin: 1px;
+	border:1px solid gray;
+	padding:1em;
+	background-color: #eeeeee;
+	font-family: arial;
+	font-size: 12px;
+	}
+	
+	.No-line-top {
+	width:95%;
+	margin: 1px;
+	padding:1em;
+	font-family: arial;
+	font-size: 12px;
+	}
+	
+	.Header {
+	width: 100%;
+	border:1px solid black;
+	overflow: visible;
+	padding: 1px;
+	}
+	
+	.No-line-header {
+	width: 100%;
+	overflow: visible;
+	padding: 1px;
+	}
+	
+	.HeaderContent {
+	width: 100%;
+	padding: 1px;
+	}
+	
+	.No-line-headerContent {
+	width: 100%;
+	padding: 1px;
+	}
+	
+	.Caption {
+	width: 100px;
+	padding:1px;
+	background-color: #CAE8EA;
+	margin-right: 2px;
+	float: left;
+	clear: both;
+	font-weight: bold;
+	}
+	
+	.No-line-caption {
+	width: 100px;
+	padding:1px;
+	margin-right: 2px;
+	float: left;
+	clear: both;
+	font-weight: bold;
+	}
+	
+	.Content, .No-line-content {
+	padding:1px;
+	background-color:  white;
+	margin-right: 1px;
+	}
+	
+	.Content div, .No-line-content div {
+	display:inline;
+	}
+	
+	.NoScreen {
+	display: none;
+	}
+	
+}
+
+@media print {
+
+	.Top, .No-line-top {
+	margin: 1px;
+	font-family: arial;
+	font-size: 12px;
+	overflow: visible;
+	}
+
+	.HeaderContent, .No-line-headerContent {
+	width: 47.5%;
+	height: 68px;
+	min-height: 68px;
+	max-height: 68px;
+	border: solid black 1px;
+	padding: 0.5em;
+	float: left;
+	overflow: hidden;
+	}
+	
+	.Caption, .No-line-caption {
+	float: left;
+	display:inline;
+	font-weight: bold;
+	}
+	
+	.NoPrint {
+	display: none;
+	}
+
+}
+
+div {
+	min-height: 12px;
+}
+
+.Document {
+width:95%;
+clear:left;
+margin: 1px;
+border:1px solid gray;
+padding:1em;
+background-color: #eeeeee;
+font-family: arial;
+font-size: 12px;
+}
+
+.No-line-doc, .One-line-doc {
+width:95%;
+clear:left;
+margin: 1px;
+padding:1em;
+font-family: arial;
+font-size: 12px;
+}
+
+.Document h1 {
+padding:0.3em;
+color:white;
+background-color:gray;
+border:1px solid gray;
+font-size: 1.6em;
+line-height:0.7em;
+margin-bottom:0.3em;
+margin-top:0em;
+}
+
+.No-line-doc h1, .One-line-doc h1 {
+padding:0.1em;
+font-size: 1.7em;
+line-height:0.7em;
+margin-bottom:0.3em;
+}
+
+.Document h2 {
+padding:0.4em;
+color:white;
+background-color: gray;
+border:1px solid gray;
+font-size: 1.3em;
+line-height:0.7em;
+margin-bottom:0.3em;
+}
+
+.No-line-doc h2, .One-line-doc h2 {
+padding:0.1em;
+font-size: 1.3em;
+line-height:1em;
+margin-top:2em;
+margin-bottom:0.3em;
+}
+
+.Document h3 {
+padding:0.2em;
+color:black;
+font-size: 1.1em;
+line-height:0.1em;
+margin-bottom:0.3em
+}
+
+.No-line-doc h3, .One-line-doc h3 {
+padding:0.2em;
+font-size: 1.2em;
+line-height:1em;
+margin-bottom:0.3em;
+}
+
+.Document table {
+border:1px solid black;
+width:100%;
+}
+
+.No-line-doc table, .One-line-doc table {
+width:100%;
+}
+
+.Document th {
+background-color: #CAE8EA;
+border-style:none;
+font-family:Arial;
+font-size:12px;
+text-align: left;
+vertical-align: top;
+width: 100px;
+}
+
+.One-line-doc th {
+border-top: 1px solid lightgrey;
+font-family:Arial;
+font-size:12px;
+text-align: left;
+vertical-align: top;
+width: 100px;
+padding: 4px 2px 4px 2px;
+}
+
+.No-line-doc th {
+border-style:none;
+font-family:Arial;
+font-size:12px;
+text-align: left;
+vertical-align: top;
+width: 100px;
+}
+
+.Document td {
+background-color: white;
+border-style: none;
+text-align: left;
+vertical-align: top;
+font-size: 12px;
+}
+
+.One-line-doc td {
+border-top: 1px solid lightgrey;
+background-color: white;
+text-align: left;
+vertical-align: top;
+font-size: 12px;
+padding: 4px 2px 4px 2px;
+}
+
+.No-line-doc td {
+background-color: white;
+border-style: none;
+text-align: left;
+vertical-align: top;
+font-size: 12px;
+}
+
+.Document th.h2 {
+color:white;
+background-color: gray;
+border:1px solid gray;
+font-size: 1em;
+line-height:0.9em;
+width: 100px;
+}
+
+.One-line-doc th.h2 {
+border-top: 1px solid lightgrey;
+font-family:Arial;
+font-size:1.3em;
+text-align: left;
+vertical-align: top;
+width: 100px;
+padding: 4px 2px 4px 2px;
+}
+
+.No-line-doc th.h2 {
+border-style:none;
+font-family:Arial;
+font-size:1.3em;
+text-align: left;
+vertical-align: top;
+width: 100px;
+}
+
+.Document th.h3 {
+background-color: gray;
+color:white;
+}
+
+.One-line-doc th.h3 {
+border-top: 1px solid lightgrey;
+font-family:Arial;
+font-size:1.2em;
+text-align: left;
+vertical-align: top;
+width: 100px;
+padding: 4px 2px 4px 2px;
+}
+
+.No-line-doc th.h3 {
+border-style:none;
+font-family:Arial;
+font-size:1.2em;
+text-align: left;
+vertical-align: top;
+width: 100px;
+}
+
+td.Emphasized {
+background-color:#CAE8EA;
+width: 100px;
+}
+
+.viktig {
+color: red;
+}
+
+.Box {
+border:1px solid black;
+padding:1px;
+overflow: hidden;
+}
+
+.No-line-Box {
+padding:1px;
+overflow: hidden;
+}
+	
+.MainCaption {
+padding:1px;
+background-color: #CAE8EA;
+margin: 1px;
+display: inline;
+font-weight: bold;
+white-space: nowrap;
+font-size: 12px;
+}
+	
+.No-line-MainCaption {
+padding:1px;
+margin: 1px;
+display: inline;
+font-weight: bold;
+white-space: nowrap;
+font-size: 12px;
+}
+
+.MainContent, .No-line-MainContent {
+padding:1px;
+padding-right:1cm;
+background-color:  white;
+margin: 1px;
+display: inline;
+white-space: nowrap;
+font-size: 12px;
+}
+
+.Block, .No-line-Block {
+float: left;
+}
+
+#FellesMeny ul { 
+margin: 0;
+padding: 0; 
+list-style-type: none; 
+list-style-image: none;
+}
+
+#FellesMeny li { 
+display:inline;
+}
+
+#FellesMeny a {
+text-decoration:none;
+color: blue;
+white-space:nowrap;
+padding-right:1em;
+width:15em;
+}
+
+#FellesMeny a:hover {
+color: purple;
+}
+
+<!--/*--></style>
+	</head>
+	<body>
+		<div class="No-line-top">
+			<div class="No-line-header">
+				<div class="No-line-headerContent">
+					<div class="No-line-caption">Avsender &nbsp;</div>
+					<div class="No-line-content">
+						<div>St. Olavs Hospital</div>
+						<div>
+							<div class="NoPrint">-&nbsp;</div>Medisinsk biokjemi&nbsp;</div>
+					</div>
+				</div>
+				<div class="No-line-headerContent">
+					<div class="No-line-caption">Pasient&nbsp;</div>
+					<div class="No-line-content">
+						<div>Telokk, Gry&nbsp;
+			<b>Fødselsnummer:&nbsp;</b>12057900499&nbsp;
+		</div>
+						<div class="NoPrint">&nbsp;<b>Bostedsadresse:&nbsp;</b></div>
+						<div>Lungegaardsbakken 13</div>
+						<div class="NoPrint">,</div>
+						<div>5020&nbsp;Bergen</div>
+					</div>
+				</div>
+				<div class="No-line-headerContent">
+					<div class="No-line-caption">Mottaker&nbsp;</div>
+					<div class="No-line-content">
+						<div>Rita Lin<div class="NoPrint">,</div>&nbsp;</div>
+						<div>Kattskinnet legesenter</div>
+					</div>
+				</div>
+				<div class="No-line-headerContent">
+					<div class="NoScreen">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<div class="No-line-doc">
+			<h1>Svarrapport
+				Medisinsk biokjemi&nbsp;-
+					<font color="black">Ny</font>&nbsp;-
+					Endelig rapport</h1>
+			<div id="FellesMeny" class="FellesMeny">
+				<ul>
+					<li>
+						<a href="#ServReport1">Meldingsinformasjon</a>
+					</li>
+					<li>
+						<a href="#AnalysedSubject1">Analysert materiale</a>
+					</li>
+					<li>
+						<a href="#ResultItem1">Undersøkelsesresultat</a>
+					</li>
+					<li>
+						<a href="#ServReq1">Opprinnelig rekvisisjon</a>
+					</li>
+					<li>
+						<a href="#HCP1">Helsetjenesteenheter</a>
+					</li>
+				</ul>
+			</div>
+			<br/>
+			<h2 id="ServReport1">Meldingsinformasjon</h2>
+			<table>
+				<tbody>
+					<tr>
+						<th>Utstedt-dato</th>
+						<td width="1800px" colspan="9">02.09.15&nbsp;kl.16:32</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 id="AnalysedSubject1">Analysert materiale</h2>
+			<table>
+				<tbody>
+					<tr>
+						<th>Type materiale&nbsp;1</th>
+						<td width="200px" colspan="1">Blod</td>
+						<th>Tjenesteyters id</th>
+						<td width="200px" colspan="1">LKB2701269603</td>
+						<th>Prøve tatt - dato</th>
+						<td width="1000px" colspan="5">02.09.15&nbsp;kl.16:07</td>
+					</tr>
+					<tr>
+						<th>Type materiale&nbsp;2</th>
+						<td width="200px" colspan="1">Plasma</td>
+						<th>Tjenesteyters id</th>
+						<td width="200px" colspan="1">0937801731</td>
+						<th>Prøve tatt - dato</th>
+						<td width="1000px" colspan="5">02.09.15&nbsp;kl.16:07</td>
+					</tr>
+					<tr>
+						<th>Type materiale&nbsp;3</th>
+						<td width="200px" colspan="1">Serum</td>
+						<th>Tjenesteyters id</th>
+						<td width="200px" colspan="1">IMM2701269601</td>
+						<th>Prøve tatt - dato</th>
+						<td width="1000px" colspan="5">02.09.15&nbsp;kl.16:07</td>
+					</tr>
+					<tr>
+						<th>Type materiale&nbsp;4</th>
+						<td width="200px" colspan="1">Fæces</td>
+						<th>Tjenesteyters id</th>
+						<td width="200px" colspan="1">SBK2701269606</td>
+						<th>Prøve tatt - dato</th>
+						<td width="1000px" colspan="5">02.09.15&nbsp;kl.16:07</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 id="ResultItem1">Undersøkelsesresultat</h2>
+			<table>
+				<tbody>
+					<tr>
+						<th colspan="1">Undersøkelse</th>
+						<td colspan="1">
+							<b>Resultat</b>
+						</td>
+						<th colspan="1">Ref.interval</th>
+						<th colspan="1">Tidspunkt for</th>
+						<td colspan="6">
+							<b>Tilleggsopplysninger</b>
+						</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>B-Hemoglobin</div>
+						</td>
+						<td width="150px" colspan="1">15.0&nbsp;g/dL&nbsp;
+				</td>
+						<td width="150px" colspan="1">11,7 - 15,3&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;LKB2701269603&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>Ery-MCV</div>
+						</td>
+						<td width="150px" colspan="1">92&nbsp;fL&nbsp;
+				</td>
+						<td width="150px" colspan="1">82 - 98&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;LKB2701269603&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>B-Leukocytter</div>
+						</td>
+						<td width="150px" colspan="1">3.6&nbsp;10E9/L&nbsp;
+				</td>
+						<td width="150px" colspan="1">3,5 - 11,0&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;LKB2701269603&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>B-Nøytrofile granulocytter</div>
+						</td>
+						<td width="150px" colspan="1">1.2&nbsp;10E9/L&nbsp;
+				<b>Lav</b></td>
+						<td width="150px" colspan="1">1,7 - 8,2&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;LKB2701269603&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>B-Lymfocytter</div>
+						</td>
+						<td width="150px" colspan="1">1.0&nbsp;10E9/L&nbsp;
+				</td>
+						<td width="150px" colspan="1">0,7 - 5,3&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;LKB2701269603&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>B-Monocytter</div>
+						</td>
+						<td width="150px" colspan="1">0.10&nbsp;10E9/L&nbsp;
+				</td>
+						<td width="150px" colspan="1">0,04 - 1,30&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;LKB2701269603&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>B-Eosinofile</div>
+						</td>
+						<td width="150px" colspan="1">0.2&nbsp;10E9/L&nbsp;
+				</td>
+						<td width="150px" colspan="1">0,0 - 0,7&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;LKB2701269603&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>B-Basofile</div>
+						</td>
+						<td width="150px" colspan="1">0.0&nbsp;10E9/L&nbsp;
+				</td>
+						<td width="150px" colspan="1">0,0 - 0,3&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;LKB2701269603&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>B-Trombocytter</div>
+						</td>
+						<td width="150px" colspan="1">236&nbsp;10E9/L&nbsp;
+				</td>
+						<td width="150px" colspan="1">165 - 387&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;LKB2701269603&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>B-RetHb</div>
+						</td>
+						<td width="150px" colspan="1">32.0&nbsp;pg&nbsp;
+				</td>
+						<td width="150px" colspan="1">31,5 - 35,5&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;LKB2701269603&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-Homocystein</div>
+						</td>
+						<td width="150px" colspan="1">20.0&nbsp;µmol/L&nbsp;
+				<b>Høy</b></td>
+						<td width="150px" colspan="1">&lt; 15,0&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;0937801731&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-Vit B12 (Kobalamin, total)</div>
+						</td>
+						<td width="150px" colspan="1">452&nbsp;pmol/L&nbsp;
+				</td>
+						<td width="150px" colspan="1">175 - 700&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;0937801731&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-Vit. B9 (Folsyre)</div>
+						</td>
+						<td width="150px" colspan="1">10.0&nbsp;nmol/L&nbsp;
+				</td>
+						<td width="150px" colspan="1">&gt; 8,0&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;0937801731&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-Ferritin</div>
+						</td>
+						<td width="150px" colspan="1">52&nbsp;ug/L&nbsp;
+				</td>
+						<td width="150px" colspan="1">18 - 240&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;0937801731&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-Kreatinin</div>
+						</td>
+						<td width="150px" colspan="1">200&nbsp;µmol/L&nbsp;
+				<b>Høy</b></td>
+						<td width="150px" colspan="1">45 - 90&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;0937801731&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>Pt-GFR estimert</div>
+						</td>
+						<td width="150px" colspan="1">25&nbsp;mL/min/1,73m2&nbsp;
+				</td>
+						<td width="150px" colspan="1">&nbsp;</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;0937801731&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>B-Kadmium</div>
+						</td>
+						<td width="150px" colspan="1">&lt;5&nbsp;nmol/L&nbsp;
+				</td>
+						<td width="150px" colspan="1">&lt; 20&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;LKB2701269603&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-Antitrombinaktivitet, FIIa-basert</div>
+						</td>
+						<td width="150px" colspan="1">65&nbsp;%&nbsp;
+				<b>Lav</b></td>
+						<td width="150px" colspan="1">&gt; 80&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div><b>Statusendring</b>:&nbsp;<div>02.09.15&nbsp;kl.16:32</div><b>Medisinsk&nbsp;validering</b>:&nbsp;<div>02.09.15&nbsp;kl.16:32</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;0937801731&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-Protein C aktivitet</div>
+						</td>
+						<td width="150px" colspan="1">23&nbsp;%&nbsp;
+				<b>Lav</b></td>
+						<td width="150px" colspan="1">&gt; 70&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;0937801731&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-Protein S (fritt)</div>
+						</td>
+						<td width="150px" colspan="1">60&nbsp;%&nbsp;
+				<b>Lav</b></td>
+						<td width="150px" colspan="1">&gt; 65&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div><b>Statusendring</b>:&nbsp;<div>02.09.15&nbsp;kl.16:32</div><b>Medisinsk&nbsp;validering</b>:&nbsp;<div>02.09.15&nbsp;kl.16:32</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;0937801731&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>DNA-Faktor V Leiden</div>
+						</td>
+						<td width="150px" colspan="1">Genfeil påvist heterozygot&nbsp;
+						</td>
+						<td width="150px" colspan="1">&nbsp;</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div><b>Statusendring</b>:&nbsp;<div>02.09.15&nbsp;kl.16:32</div><b>Medisinsk&nbsp;validering</b>:&nbsp;<div>02.09.15&nbsp;kl.16:32</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;LKB2701269603&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>DNA-Protrombin G20210A</div>
+						</td>
+						<td width="150px" colspan="1">Normal&nbsp;
+						</td>
+						<td width="150px" colspan="1">&nbsp;</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div><b>Statusendring</b>:&nbsp;<div>02.09.15&nbsp;kl.16:32</div><b>Medisinsk&nbsp;validering</b>:&nbsp;<div>02.09.15&nbsp;kl.16:32</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;LKB2701269603&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-Lupus-antikoagulant</div>
+						</td>
+						<td width="150px" colspan="1">Negativ, se kommentar&nbsp;
+						</td>
+						<td width="150px" colspan="1">&nbsp;</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div><b>Statusendring</b>:&nbsp;<div>02.09.15&nbsp;kl.16:32</div><b>Medisinsk&nbsp;validering</b>:&nbsp;<div>02.09.15&nbsp;kl.16:32</div></td>
+						<td colspan="6">
+							<b>Kommentar til undersøkelsen</b>:&nbsp;Ikke påvist Lupus antikoagulant. Ved fortsatt mistanke om Antifosfolipid syndrom, send serum til undersøkelse av anti-kardiolipin og anti-beta2glykoprotein 1 til Avd.for immunologi og transfusjonsmedisin, Haukeland universitetssjukehus.&nbsp;
+		<b>Referanse til prøve</b>:&nbsp;0937801731&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-Lupus antikoagulant RVVT</div>
+						</td>
+						<td width="150px" colspan="1">1.17&nbsp;0&nbsp;
+				</td>
+						<td width="150px" colspan="1">&lt; 1,28&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div><b>Statusendring</b>:&nbsp;<div>02.09.15&nbsp;kl.16:32</div><b>Medisinsk&nbsp;validering</b>:&nbsp;<div>02.09.15&nbsp;kl.16:32</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;0937801731&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-PSA</div>
+						</td>
+						<td width="150px" colspan="1">0.1&nbsp;ug/L&nbsp;
+				</td>
+						<td width="150px" colspan="1">&lt; 4,0&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;IMM2701269601&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-IgE</div>
+						</td>
+						<td width="150px" colspan="1">150&nbsp;10E3 IU/L&nbsp;
+				<b>Høy</b></td>
+						<td width="150px" colspan="1">&lt; 120&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;2701269665&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-Matvarepanel FX5 IgE</div>
+						</td>
+						<td width="150px" colspan="1">Grense&nbsp;
+						</td>
+						<td width="150px" colspan="1">&nbsp;</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;IMM2701269601&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-Etosuksimid</div>
+						</td>
+						<td width="150px" colspan="1">250&nbsp;µmol/L&nbsp;
+				<b>Lav</b></td>
+						<td width="150px" colspan="1">300 - 600&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div><b>Statusendring</b>:&nbsp;<div>02.09.15&nbsp;kl.16:32</div><b>Medisinsk&nbsp;validering</b>:&nbsp;<div>02.09.15&nbsp;kl.16:32</div></td>
+						<td colspan="6">
+							<b>Kommentar til undersøkelsen</b>:&nbsp;Referanseområdet gjelder epilepsibehandling, men er ikke veldefinert
+&nbsp;
+		<b>Referanse til prøve</b>:&nbsp;IMM2701269601&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>F-Kalprotektin</div>
+						</td>
+						<td width="150px" colspan="1">20&nbsp;mg/kg&nbsp;
+				</td>
+						<td width="150px" colspan="1">&nbsp;</td>
+						<td width="150px" colspan="1">
+							<b>Undersøkelse</b>:&nbsp;<div>02.09.15&nbsp;kl.16:29</div></td>
+						<td colspan="6">
+							<b>Referanse til prøve</b>:&nbsp;SBK2701269606&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 id="ServReq1">Opprinnelig rekvisisjon
+					Medisinsk biokjemi&nbsp;-
+						Ny</h2>
+			<table>
+				<tbody>
+					<tr>
+						<th>Utstedt-dato</th>
+						<td width="200px" colspan="1">02.09.15&nbsp;kl.16:00</td>
+						<th>Ønsket prioritet</th>
+						<td width="1400px" colspan="7">Normal</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 id="HCP1">Helsetjenesteenheter</h2>
+			<table>
+				<tbody>
+					<tr style="text-decoration:none">
+						<th colspan="10" class="h3">Tjenesteyter
+				</th>
+					</tr>
+					<tr style="text-decoration:none">
+						<th>Navn</th>
+						<td width="200px">St. Olavs Hospital</td>
+						<th>HER-id</th>
+						<td colspan="7">59</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<th>Avdeling</th>
+						<td width="200px">Medisinsk biokjemi</td>
+						<th>HER-id</th>
+						<td colspan="7">91123</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<th colspan="10" class="h3">Henvisende instans
+				</th>
+					</tr>
+					<tr style="text-decoration:none">
+						<th>Navn</th>
+						<td width="200px">Kattskinnet legesenter</td>
+						<th>HER-id</th>
+						<td colspan="7">91096</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<th>Helsepersonell</th>
+						<td width="200px">Rita Lin</td>
+						<th>HER-id</th>
+						<td colspan="7">91101</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="No-line-doc">
+			<h2 style="margin-top:0px;">Dokumentinformasjon</h2>
+			<table>
+				<tbody>
+					<tr>
+						<th>Melding sendt</th>
+						<td width="200px">02.09.15&nbsp;kl.16:35</td>
+						<th>Tjenesteyters id</th>
+						<td width="200px">231d8f18-1a2e-4c38-9035-68c7641958ff</td>
+						<th>Meldingsid</th>
+						<td>F85601A6-4663-4AA3-8237-86662A60C73F</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

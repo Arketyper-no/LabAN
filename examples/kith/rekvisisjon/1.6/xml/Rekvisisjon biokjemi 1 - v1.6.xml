@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15 Rekvisisjon-v1.6.xsd">
+	<Type V="REQ_LAB" DN="Rekvisisjon-Laboratoriemedisin"/>
+	<MIGversion>v1.6 2012-02-15</MIGversion>
+	<GenDate V="2015-05-08T15:43:01"/>
+	<MsgId>4054A05D-CE75-45DD-B98E-E07DDEDABC25</MsgId>
+	<ServReq>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-05-08T15:40:23"/>
+		<MsgDescr V="CLIN" DN="Medisinsk biokjemi"/>
+		<Id>312DD2A9-7CE7-4AD4-9FD8-ED5E3561843D</Id>
+		<ServProvId>819a050f-b572-49e4-8d33-885e80dfdaf9</ServProvId>
+		<RequestedPrioReport V="N" DN="Normal"/>
+		<Patient>
+			<Name>Danser, Line</Name>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk biokjemi</Name>
+						<Id>91846</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+				<Name>Kattskinnet legesenter</Name>
+				<Id>91096</Id>
+				<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>	
+				</Inst>
+			</HCP>
+		</Requester>
+		<Comment>
+			<TextResultValue>Receiving system: DWLab. Medisinsk Biokjemi</TextResultValue>
+		</Comment>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<Id V="NPU02593" S="2.16.578.1.12.4.1.1.7280" DN="B-Leukocytter"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-08T15:42:53"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="B" DN="Blod"/>
+				<IdByRequester>312DD2A9-7CE7-4AD4-9FD8-ED5E3561843D</IdByRequester>
+				<IdByServProv>0127886709</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+	</ServReq>
+</Message>

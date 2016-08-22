@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15 Rekvisisjon-v1.6.xsd">
+	<Type V="REQ_LAB" DN="Rekvisisjon-Laboratoriemedisin"/>
+	<MIGversion>v1.6 2012-02-15</MIGversion>
+	<GenDate V="2015-05-13T12:26:00"/>
+	<MsgId>C046CD0B-734A-4B3F-A20F-E10B4AF85598</MsgId>
+	<ServReq>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-05-13T12:24:04"/>
+		<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+		<Id>5ebc375a-40fd-4824-a3e6-3eae57fc8bca</Id>
+		<ServProvId>e5e04e41-0cc3-479f-8ebe-d95fbbec3ca5</ServProvId>
+		<RequestedPrioReport V="N" DN="Normal"/>
+		<Patient>
+			<Name>Danser, Line</Name>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk mikrobiologi</Name>
+						<Id>91843</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+				<Name>Kattskinnet legesenter</Name>
+				<Id>91096</Id>
+				<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>	
+				</Inst>
+			</HCP>
+		</Requester>
+		<Comment>
+			<TextResultValue>Receiving system: Safir. Utført på CGM Analytix</TextResultValue>
+		</Comment>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<!--<Id V="ABC-AER" S="2.16.578.1.12.4.1.1.8212" DN="Abscessinnhold-Dyrkning aerobt" OT="Abscessinnhold-Dyrkning aerobt"/>-->
+				<Id V="NPU17956" S="2.16.578.1.12.4.1.1.7280" DN="Us-Anaerobt dyrkning"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-13T12:25:57"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="A" DN="Abscessinnhold"/>
+				<IdByRequester>4CM0QKVJ1-0000050406</IdByRequester>
+				<IdByServProv>80041141BSC</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+	</ServReq>
+</Message>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15 Rekvisisjon-v1.6.xsd">
+	<Type V="REQ_LAB" DN="Rekvisisjon-Laboratoriemedisin"/>
+	<MIGversion>v1.6 2012-02-15</MIGversion>
+	<GenDate V="2015-05-18T09:08:13"/>
+	<MsgId>CCCB72C2-185F-4BD7-A318-BC19A19950DD</MsgId>
+	<ServReq>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-05-18T09:06:26"/>
+		<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+		<Id>869E17A1-017D-439E-BF8D-6DFFB3ABBBBB</Id>
+		<ServProvId>bf19e238-3179-4e5c-a650-3e74e143340e</ServProvId>
+		<RequestedPrioReport V="N" DN="Normal"/>
+		<Patient>
+			<Name>Danser, Line</Name>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<InfItem>
+				<Observation>
+					<Description>hoste</Description>
+				</Observation>
+				<Type V="OPPL" DN="Klinisk opplysning"/>
+			</InfItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk mikrobiologi</Name>
+						<Id>91843</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Kattskinnet legesenter</Name>
+					<Id>91096</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>
+				</Inst>
+			</HCP>
+		</Requester>
+		<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>Luftveier-B. Pertussis DNA: Oppgi 1.sykdomsdag: 170515</TextResultValue>
+		</ReasonAsText>
+		<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>Luftveier-B. Pertussis DNA: Prøvelokalisasjon: Nasopharynx</TextResultValue>
+		</ReasonAsText>
+		<Comment>
+			<TextResultValue>Receiving system: Safir. Utført på CGM Analytix.</TextResultValue>
+		</Comment>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<!--<Id V="PER-DNA" S="2.16.578.1.12.4.1.1.8212" DN="Luftveier-B. Pertussis DNA" OT="Luftveier-B. Pertussis DNA"/>-->
+				<Id V="NPU14583" S="2.16.578.1.12.4.1.1.7280" DN="Us-Bordetella parapertussis DNA"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="PPE-DNA" S="2.16.578.1.12.4.1.1.8212" DN="Luftveier-B. Parapertussis DNA" OT="Luftveier-B. Parapertussis DNA"/>-->
+				<Id V="NPU14584" S="2.16.578.1.12.4.1.1.7280" DN="Us-Bordetella parapertussis DNA"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-18T09:07:58"/>
+				</CollectedSample>
+				<!--<Type>Luftveier</Type>-->
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="LUFT" DN="Luft"/>
+				<IdByRequester>869E17A1-017D-439E-BF8D-6DFFB3ABBBBB</IdByRequester>
+				<IdByServProv>80040821VIR</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+	</ServReq>
+</Message>

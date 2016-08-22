@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15 Rekvisisjon-v1.6.xsd">
+	<Type V="REQ_LAB" DN="Rekvisisjon-Laboratoriemedisin"/>
+	<MIGversion>v1.6 2012-02-15</MIGversion>
+	<GenDate V="2015-05-19T18:11:22"/>
+	<MsgId>69623478-F9BF-4162-9EB8-6C6E1527587F</MsgId>
+	<ServReq>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-05-19T18:06:54"/>
+		<MsgDescr V="CLIN" DN="Medisinsk biokjemi"/>
+		<Id>8837dd91-0e1c-4208-a8b2-1e2447eee2a0</Id>
+		<ServProvId>bb654297-2620-4929-a299-0168e5350372</ServProvId>
+		<RequestedPrioReport V="N" DN="Normal"/>
+		<Patient>
+			<Name>Danser, Line</Name>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk biokjemi</Name>
+						<Id>91846</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+				<Name>Kattskinnet legesenter</Name>
+				<Id>91096</Id>
+				<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>	
+				</Inst>
+			</HCP>
+		</Requester>		
+		<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>Pasienten er gravid</TextResultValue>
+		</ReasonAsText>
+		<Comment>
+			<TextResultValue>Recieving system: Dwlab. Medisinsk biokjemi</TextResultValue>
+		</Comment>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<!--<Id V="33" S="2.16.578.1.12.4.1.1.8213" DN="Hemoglobin" OT="Hemoglobin"/>-->
+				<Id V="NOR05172" S="2.16.578.1.12.4.1.1.7280" DN="B-Hemoglobin"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="35" S="2.16.578.1.12.4.1.1.8213" DN="Trombocytter" OT="Trombocytter"/>-->
+				<Id V="NPU03568" S="2.16.578.1.12.4.1.1.7280" DN="B-Trombocytter"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-19T18:10:05"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="B" DN="Blod"/>
+				<IdByRequester>4CS12PYAA-0000050632</IdByRequester>
+				<IdByServProv>0127900256</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<!--<Id V="3" S="2.16.578.1.12.4.1.1.8213" DN="CRP, C-reaktivt protein" OT="CRP, C-reaktivt protein"/>-->
+				<Id V="NPU19748" S="2.16.578.1.12.4.1.1.7280" DN="P-CRP"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="56" S="2.16.578.1.12.4.1.1.8213" DN="TSH" OT="TSH"/>-->
+				<Id V="NOR05865" S="2.16.578.1.12.4.1.1.7280" DN="Us-TSH"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="55" S="2.16.578.1.12.4.1.1.8213" DN="FT4" OT="FT4"/>-->
+				<Id V="NOR05863" S="2.16.578.1.12.4.1.1.7280" DN="Us-FT4" />
+			</Investigation>
+			<Investigation>
+				<!--<Id V="142" S="2.16.578.1.12.4.1.1.8213" DN="HCG, kvantitativt" OT="HCG, kvantitativt"/>-->
+				<Id V="NPU01572" S="2.16.578.1.12.4.1.1.7280" DN="P-hCG"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-19T18:10:05"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="S" DN="Serum"/>
+				<IdByRequester>4CS12PYAA-0000050632</IdByRequester>
+				<IdByServProv>0027900256</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+	</ServReq>
+</Message>

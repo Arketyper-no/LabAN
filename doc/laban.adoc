@@ -1,0 +1,32 @@
+= LabAN 
+
+== About 
+
+
+== Areas 
+The overall ambition is to create clinical models to be able to implement laboratory workflow based on openEHR. There is a lot of use-cases to support. 
+
+* Ordering
+* Specimen collecting
+* Workflow inside the lab 
+* Reports 
+
+== Relevant standards in Norway 
+Specific for Norway is the established standards for request and report messages (KITH). 
+
+https://ehelse.no/Sider/Rekvirering-av-medisinske-tjenester-Laboratoriemedisin-(v1-6)-(HIS-11602014).aspx[Laboratory request] :: Denne standarden beskriver en type melding som benyttes for å sende rekvisisjon til et laboratorium eller en sykehusavdeling. Meldingen dekker alle laboratorietjenester (medisinsk biokjemi, hematologi, mikrobiologi, virologi, cytologi, histologi mv).
+
+https://ehelse.no/Sider/Svarrapportering-av-medisinske-tjenester--Informasjonsmodell-og-XML-meldingsbeskrivelse-%97-HIS-808222014.aspx[Svarrapportering medisinske tjenester]:: Se de spesifikke områdene under. footnote:[I am not able to make this URL work from ASCIIDOC it something with the URL encoding]
+
+https://ehelse.no/Sider/Svarrapportering-av-medisinske-tjenester-Medisinsk-biokjemi---HIS-11382014.aspx[Svarrapport medisinsk biokjemi]:: Denne standarden beskriver en type melding som benyttes for å sende svar på en utført laboratorieundersøkelse innenfor medisinsk biokjemi til en rekvirent og/eller andre relevante mottakere.
+
+https://ehelse.no/Sider/Svarrapportering-av-medisinske-tjenester-Mikrobiologi---HIS-11392014.aspx[Svarrapport mikrobiologi]:: Denne standarden beskriver en type melding som benyttes for å sende svar på en utført laboratorieundersøkelse innenfor mikrobiologi til en rekvirent og/eller andre relevante mottakere.
+
+https://ehelse.no/Sider/Svarrapportering-av-medisinske-tjenester-Immunologi-HIS11402014.aspx[Immunologi]:: Denne standarden beskriver en type melding som benyttes for å sende svar på en utført laboratorieundersøkelse innenfor immunologi til en rekvirent og/eller andre relevante mottakere.
+
+https://ehelse.no/Sider/Svarrapportering-av-medisinske-tjenester-Patologi---HIS-11412014.aspx[Patologi]:: Denne standarden beskriver en type melding som benyttes for å sende svar på en utført laboratorieundersøkelse innenfor patologi til en rekvirent og/eller andre relevante mottakere.
+
+In addition there is similar specifications for radiology: 
+
+* https://ehelse.no/Sider/Rekvirering-av-medisinske-tjenester--Informasjonsmodell-og-XML-meldingsbeskrivelse-%E2%80%93-HIS-808212014.aspx[Radiology request] footnote:[URL escape problem with URL. ]
+* https://ehelse.no/Sider/Svarrapportering-av-medisinske-tjenester-Radiologi---HIS-11422014.aspx[Radiology report]

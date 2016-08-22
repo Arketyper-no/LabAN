@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15 Rekvisisjon-v1.6.xsd">
+	<Type V="REQ_LAB" DN="Rekvisisjon-Laboratoriemedisin"/>
+	<MIGversion>v1.6 2012-02-15</MIGversion>
+	<GenDate V="2015-05-08T15:43:01"/>
+	<MsgId>9694CCC8-639D-4950-BDD0-68A6B5FD7F5C</MsgId>
+	<ServReq>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-05-08T15:40:23"/>
+		<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+		<Id>00103793-FA5E-492B-849F-1F20C20F00EE</Id>
+		<ServProvId>3b1f8e94-d8ee-4be2-ab59-939f0b7bd8b1</ServProvId>
+		<RequestedPrioReport V="N" DN="Normal"/>
+		<Patient>
+			<Name>Danser, Line</Name>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk mikrobiologi</Name>
+						<Id>91843</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+				<Name>Kattskinnet legesenter</Name>
+				<Id>91096</Id>
+				<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>	
+				</Inst>
+			</HCP>
+		</Requester>
+		<Comment>
+<TextResultValue>Receiving system: Safir. Utført på CGM Analytix. Bakteriologi</TextResultValue>		
+		</Comment>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<Id V="NPU06099" S="2.16.578.1.12.4.1.1.7280" DN="B-Aerob blodkultur"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-08T15:42:53"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="B" DN="Blod"/>
+				<IdByRequester>00103793-FA5E-492B-849F-1F20C20F00EE</IdByRequester>
+				<IdByServProv>80040940BAE</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+	</ServReq>
+</Message>

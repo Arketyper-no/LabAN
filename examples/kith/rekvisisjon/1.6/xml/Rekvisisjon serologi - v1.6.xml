@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15 Rekvisisjon-v1.6.xsd">
+	<Type V="REQ_LAB" DN="Rekvisisjon-Laboratoriemedisin"/>
+	<MIGversion>v1.6 2012-02-15</MIGversion>
+	<GenDate V="2015-05-19T08:19:44"/>
+	<MsgId>DCBE3A3B-469A-4C4D-A608-A0DEDE0E5A4D</MsgId>
+	<ServReq>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-05-19T08:13:15"/>
+		<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+		<Id>32492DBE-0B13-4D60-9012-87A29CDB3D68</Id>
+		<ServProvId>55746d08-bbcf-4650-a964-76bc0cb0fad2</ServProvId>
+		<RequestedPrioReport V="N" DN="Normal"/>
+		<Patient>
+			<Name>Danser, Line</Name>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<InfItem>
+				<Observation>
+					<Description>Gravid</Description>
+				</Observation>
+				<Type V="OPPL" DN="Klinisk opplysning"/>
+			</InfItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk mikrobiologi</Name>
+						<Id>91843</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Kattskinnet legesenter</Name>
+					<Id>91096</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>
+				</Inst>
+			</HCP>
+		</Requester>
+		<CopyDest>
+			<Role V="COP" DN="Kopimottaker"/>
+			<CopyDestRole>
+				<MsgType V="R" DN="Rekvisisjon"/>
+			</CopyDestRole>
+			<HCP>
+				<HCProf>
+					<Name>August September</Name>
+					<Id>9144897</Id>
+					<TypeId V="HPR" DN="HPR-nummer"/>
+				</HCProf>
+			</HCP>
+		</CopyDest>
+		<CopyDest>
+			<Role V="COP" DN="Kopimottaker"/>
+			<CopyDestRole>
+				<MsgType V="S" DN="Svar"/>
+			</CopyDestRole>
+			<HCP>
+				<HCProf>
+					<Name>Magnar Koman</Name>
+					<Id>9144889</Id>
+					<TypeId V="HPR" DN="HPR-nummer"/>
+				</HCProf>
+			</HCP>
+		</CopyDest>
+		<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>Rubellavirus IgG antistoff : Oppgi 1.sykdomsdag: Vet ikke</TextResultValue>
+		</ReasonAsText>
+		<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>Rubellavirus IgG antistoff: Pasienten er gravid</TextResultValue>
+		</ReasonAsText>
+		<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>HIV antigen/antistoff : Pasienten har gitt samtykke til HIV-test</TextResultValue>
+		</ReasonAsText>
+		<Comment>
+			<TextResultValue>Receiving system: Safir. Utført på CGM Analytix.</TextResultValue>
+		</Comment>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<!--<Id V="RUG" S="2.16.578.1.12.4.1.1.8212" DN="Rubellavirus IgG antistoff " OT="Rubellavirus IgG antistoff "/>-->
+				<Id V="NPU04128" S="2.16.578.1.12.4.1.1.7280" DN="P-Rubellavirus IgG"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="HIVC" S="2.16.578.1.12.4.1.1.8212" DN="HIV antigen/antistoff " OT="HIV antigen/antistoff "/>-->
+				<Id V="NOR25207" S="2.16.578.1.12.4.1.1.7280" DN="P-HIV antigen/antistoff"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="SYF" S="2.16.578.1.12.4.1.1.8212" DN="Treponema pallidum total as" OT="Treponema pallidum total as"/>-->
+				<Id V="NPU12241" S="2.16.578.1.12.4.1.1.7280" DN="P-Treponema pallidum antistoff"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-19T08:16:10"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="S" DN="Serum"/>
+				<IdByRequester>32492DBE-0B13-4D60-9012-87A29CDB3D68</IdByRequester>
+				<IdByServProv>80041142SER</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+	</ServReq>
+</Message>

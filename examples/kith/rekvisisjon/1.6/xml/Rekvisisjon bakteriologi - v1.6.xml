@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15 Rekvisisjon-v1.6.xsd">
+	<Type V="REQ_LAB" DN="Rekvisisjon-Laboratoriemedisin"/>
+	<MIGversion>v1.6 2012-02-15</MIGversion>
+	<GenDate V="2015-09-02T14:35:21"/>
+	<MsgId>8D022845-1697-497B-999F-53CFD5C72404</MsgId>
+	<ServReq>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-09-02T14:34:42"/>
+		<PaymentCat V="1" DN="Ordinær pasient"/>
+		<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+		<Id>9F9F6954-8A05-4E51-BDF9-8F956A6A0C57</Id>
+		<ServProvId>4c0906af-53a6-4e9b-865f-2b399f402d82</ServProvId>
+		<RequestedPrioReport V="N" DN="Normal"/>
+		<Patient>
+			<Name>Telokk, Gry</Name>
+			<OffId>12057900499</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<ResponsibleHcp>
+				<Relation V="REK" DN="Rekvirent"/>
+				<HCP>
+					<HCProf>
+						<Name>Rita Lin</Name>
+						<Id>9144900</Id>
+						<TypeId V="HPR" DN="HPR-nummer"/>
+					</HCProf>
+				</HCP>
+			</ResponsibleHcp>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>St. Olavs Hospital</Name>
+					<Id>59</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk mikrobiologi</Name>
+						<Id>91126</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Trondheim kommune</Name>
+					<Id>2342</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Legetjeneste, pleie- og omsorg</Name>
+						<Id>88218</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</Requester>
+		<ReasonAsText>
+		<Heading V="PROB" DN="Problemstilling"/>
+		<TextResultValue>Komplisert cystitt</TextResultValue>
+		</ReasonAsText>
+		<Comment>
+			<TextResultValue>Receiving system: Unilab bakteriologi </TextResultValue>
+		</Comment>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<!--<Id V="DYUP10" S="2.16.578.1.12.4.1.1.8212" DN="Dyrkning aerobt" OT="Dyrkning aerobt"/>-->
+				<Id V="NPU06099" S="2.16.578.1.12.4.1.1.7280" DN="B-Aerob blodkultur"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-09-02T14:35:19"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="UM" DN="Urin midtstråle"/>
+				<IdByRequester>9F9F6954-8A05-4E51-BDF9-8F956A6A0C57</IdByRequester>
+				<IdByServProv>27012693</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+	</ServReq>
+</Message>

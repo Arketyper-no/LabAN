@@ -1,0 +1,616 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Svarrapport</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<style type="text/css"><!--*/-->  
+
+/*Inngår i Hdirs visningsfiler versjon 1.0*/
+
+body
+{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+@media screen {
+	
+	.Top {
+	width:95%;
+	margin: 1px;
+	border:1px solid gray;
+	padding:1em;
+	background-color: #eeeeee;
+	font-family: arial;
+	font-size: 12px;
+	}
+	
+	.No-line-top {
+	width:95%;
+	margin: 1px;
+	padding:1em;
+	font-family: arial;
+	font-size: 12px;
+	}
+	
+	.Header {
+	width: 100%;
+	border:1px solid black;
+	overflow: visible;
+	padding: 1px;
+	}
+	
+	.No-line-header {
+	width: 100%;
+	overflow: visible;
+	padding: 1px;
+	}
+	
+	.HeaderContent {
+	width: 100%;
+	padding: 1px;
+	}
+	
+	.No-line-headerContent {
+	width: 100%;
+	padding: 1px;
+	}
+	
+	.Caption {
+	width: 100px;
+	padding:1px;
+	background-color: #CAE8EA;
+	margin-right: 2px;
+	float: left;
+	clear: both;
+	font-weight: bold;
+	}
+	
+	.No-line-caption {
+	width: 100px;
+	padding:1px;
+	margin-right: 2px;
+	float: left;
+	clear: both;
+	font-weight: bold;
+	}
+	
+	.Content, .No-line-content {
+	padding:1px;
+	background-color:  white;
+	margin-right: 1px;
+	}
+	
+	.Content div, .No-line-content div {
+	display:inline;
+	}
+	
+	.NoScreen {
+	display: none;
+	}
+	
+}
+
+@media print {
+
+	.Top, .No-line-top {
+	margin: 1px;
+	font-family: arial;
+	font-size: 12px;
+	overflow: visible;
+	}
+
+	.HeaderContent, .No-line-headerContent {
+	width: 47.5%;
+	height: 68px;
+	min-height: 68px;
+	max-height: 68px;
+	border: solid black 1px;
+	padding: 0.5em;
+	float: left;
+	overflow: hidden;
+	}
+	
+	.Caption, .No-line-caption {
+	float: left;
+	display:inline;
+	font-weight: bold;
+	}
+	
+	.NoPrint {
+	display: none;
+	}
+
+}
+
+div {
+	min-height: 12px;
+}
+
+.Document {
+width:95%;
+clear:left;
+margin: 1px;
+border:1px solid gray;
+padding:1em;
+background-color: #eeeeee;
+font-family: arial;
+font-size: 12px;
+}
+
+.No-line-doc, .One-line-doc {
+width:95%;
+clear:left;
+margin: 1px;
+padding:1em;
+font-family: arial;
+font-size: 12px;
+}
+
+.Document h1 {
+padding:0.3em;
+color:white;
+background-color:gray;
+border:1px solid gray;
+font-size: 1.6em;
+line-height:0.7em;
+margin-bottom:0.3em;
+margin-top:0em;
+}
+
+.No-line-doc h1, .One-line-doc h1 {
+padding:0.1em;
+font-size: 1.7em;
+line-height:0.7em;
+margin-bottom:0.3em;
+}
+
+.Document h2 {
+padding:0.4em;
+color:white;
+background-color: gray;
+border:1px solid gray;
+font-size: 1.3em;
+line-height:0.7em;
+margin-bottom:0.3em;
+}
+
+.No-line-doc h2, .One-line-doc h2 {
+padding:0.1em;
+font-size: 1.3em;
+line-height:1em;
+margin-top:2em;
+margin-bottom:0.3em;
+}
+
+.Document h3 {
+padding:0.2em;
+color:black;
+font-size: 1.1em;
+line-height:0.1em;
+margin-bottom:0.3em
+}
+
+.No-line-doc h3, .One-line-doc h3 {
+padding:0.2em;
+font-size: 1.2em;
+line-height:1em;
+margin-bottom:0.3em;
+}
+
+.Document table {
+border:1px solid black;
+width:100%;
+}
+
+.No-line-doc table, .One-line-doc table {
+width:100%;
+}
+
+.Document th {
+background-color: #CAE8EA;
+border-style:none;
+font-family:Arial;
+font-size:12px;
+text-align: left;
+vertical-align: top;
+width: 100px;
+}
+
+.One-line-doc th {
+border-top: 1px solid lightgrey;
+font-family:Arial;
+font-size:12px;
+text-align: left;
+vertical-align: top;
+width: 100px;
+padding: 4px 2px 4px 2px;
+}
+
+.No-line-doc th {
+border-style:none;
+font-family:Arial;
+font-size:12px;
+text-align: left;
+vertical-align: top;
+width: 100px;
+}
+
+.Document td {
+background-color: white;
+border-style: none;
+text-align: left;
+vertical-align: top;
+font-size: 12px;
+}
+
+.One-line-doc td {
+border-top: 1px solid lightgrey;
+background-color: white;
+text-align: left;
+vertical-align: top;
+font-size: 12px;
+padding: 4px 2px 4px 2px;
+}
+
+.No-line-doc td {
+background-color: white;
+border-style: none;
+text-align: left;
+vertical-align: top;
+font-size: 12px;
+}
+
+.Document th.h2 {
+color:white;
+background-color: gray;
+border:1px solid gray;
+font-size: 1em;
+line-height:0.9em;
+width: 100px;
+}
+
+.One-line-doc th.h2 {
+border-top: 1px solid lightgrey;
+font-family:Arial;
+font-size:1.3em;
+text-align: left;
+vertical-align: top;
+width: 100px;
+padding: 4px 2px 4px 2px;
+}
+
+.No-line-doc th.h2 {
+border-style:none;
+font-family:Arial;
+font-size:1.3em;
+text-align: left;
+vertical-align: top;
+width: 100px;
+}
+
+.Document th.h3 {
+background-color: gray;
+color:white;
+}
+
+.One-line-doc th.h3 {
+border-top: 1px solid lightgrey;
+font-family:Arial;
+font-size:1.2em;
+text-align: left;
+vertical-align: top;
+width: 100px;
+padding: 4px 2px 4px 2px;
+}
+
+.No-line-doc th.h3 {
+border-style:none;
+font-family:Arial;
+font-size:1.2em;
+text-align: left;
+vertical-align: top;
+width: 100px;
+}
+
+td.Emphasized {
+background-color:#CAE8EA;
+width: 100px;
+}
+
+.viktig {
+color: red;
+}
+
+.Box {
+border:1px solid black;
+padding:1px;
+overflow: hidden;
+}
+
+.No-line-Box {
+padding:1px;
+overflow: hidden;
+}
+	
+.MainCaption {
+padding:1px;
+background-color: #CAE8EA;
+margin: 1px;
+display: inline;
+font-weight: bold;
+white-space: nowrap;
+font-size: 12px;
+}
+	
+.No-line-MainCaption {
+padding:1px;
+margin: 1px;
+display: inline;
+font-weight: bold;
+white-space: nowrap;
+font-size: 12px;
+}
+
+.MainContent, .No-line-MainContent {
+padding:1px;
+padding-right:1cm;
+background-color:  white;
+margin: 1px;
+display: inline;
+white-space: nowrap;
+font-size: 12px;
+}
+
+.Block, .No-line-Block {
+float: left;
+}
+
+#FellesMeny ul { 
+margin: 0;
+padding: 0; 
+list-style-type: none; 
+list-style-image: none;
+}
+
+#FellesMeny li { 
+display:inline;
+}
+
+#FellesMeny a {
+text-decoration:none;
+color: blue;
+white-space:nowrap;
+padding-right:1em;
+width:15em;
+}
+
+#FellesMeny a:hover {
+color: purple;
+}
+
+<!--/*--></style>
+	</head>
+	<body>
+		<div class="No-line-top">
+			<div class="No-line-header">
+				<div class="No-line-headerContent">
+					<div class="No-line-caption">Avsender &nbsp;</div>
+					<div class="No-line-content">
+						<div>Nordlandssykehuset HF</div>
+						<div>
+							<div class="NoPrint">-&nbsp;</div>Medisinsk mikrobiologi&nbsp;</div>
+					</div>
+				</div>
+				<div class="No-line-headerContent">
+					<div class="No-line-caption">Pasient&nbsp;</div>
+					<div class="No-line-content">
+						<div>And, Andine&nbsp;
+			<b>D-nummer:&nbsp;</b>70019950032&nbsp;
+		</div>
+					</div>
+				</div>
+				<div class="No-line-headerContent">
+					<div class="No-line-caption">Mottaker&nbsp;</div>
+					<div class="No-line-content">
+						<div>Oslo legevakt - Sentrum</div>
+						<div>
+							<div class="NoPrint">-&nbsp;</div>Legevakttjeneste&nbsp;</div>
+					</div>
+				</div>
+				<div class="No-line-headerContent">
+					<div class="NoScreen">&nbsp;</div>
+				</div>
+			</div>
+		</div>
+		<div class="No-line-doc">
+			<h1>Svarrapport
+				Medisinsk biokjemi&nbsp;-
+					<font color="black">Ny</font>&nbsp;-
+					Endelig rapport</h1>
+			<div id="FellesMeny" class="FellesMeny">
+				<ul>
+					<li>
+						<a href="#ServReport1">Meldingsinformasjon</a>
+					</li>
+					<li>
+						<a href="#AnalysedSubject1">Analysert materiale</a>
+					</li>
+					<li>
+						<a href="#ResultItem1">Undersøkelsesresultat</a>
+					</li>
+					<li>
+						<a href="#ServReq1">Opprinnelig rekvisisjon</a>
+					</li>
+					<li>
+						<a href="#HCP1">Helsetjenesteenheter</a>
+					</li>
+				</ul>
+			</div>
+			<br/>
+			<h2 id="ServReport1">Meldingsinformasjon</h2>
+			<table>
+				<tbody>
+					<tr>
+						<th>Utstedt-dato</th>
+						<td width="1800px" colspan="9">16.09.15&nbsp;kl.12:43</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 id="AnalysedSubject1">Analysert materiale</h2>
+			<table>
+				<tbody>
+					<tr>
+						<th>Tjenesteyters id</th>
+						<td width="200px" colspan="1">11296224</td>
+						<th>Prøve tatt - dato</th>
+						<td width="1400px" colspan="7">16.09.15&nbsp;kl.11:20</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 id="ResultItem1">Undersøkelsesresultat</h2>
+			<table>
+				<tbody>
+					<tr>
+						<th colspan="1">Undersøkelse</th>
+						<td colspan="1">
+							<b>Resultat</b>
+						</td>
+						<th colspan="1">Ref.interval</th>
+						<th colspan="1">Tidspunkt for undersøkelsen</th>
+						<td colspan="6">
+							<b>Tilleggsopplysninger</b>
+						</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-Kreatinin</div>
+						</td>
+						<td width="150px" colspan="1">79&nbsp;µmol/L&nbsp;
+				</td>
+						<td width="150px" colspan="1">60 - 105&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<div>16.09.15&nbsp;kl.13:49</div>
+						</td>
+						<td colspan="6">Resultatet er akkreditert.&nbsp;<b>Referanse til prøve</b>:&nbsp;11296224&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>Pt-GFR estimert</div>
+						</td>
+						<td width="150px" colspan="1">113&nbsp;mL/min/1.73 m2&nbsp;
+				</td>
+						<td width="150px" colspan="1">&gt; 60&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<div>16.09.15&nbsp;kl.13:49</div>
+						</td>
+						<td colspan="6">Resultatet er ikke akkreditert.&nbsp;<b>Referanse til prøve</b>:&nbsp;11296224&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>P-CRP</div>
+						</td>
+						<td width="150px" colspan="1">0.7&nbsp;mg/L&nbsp;
+				</td>
+						<td width="150px" colspan="1">0,0 - 4,0&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<div>16.09.15&nbsp;kl.13:49</div>
+						</td>
+						<td colspan="6">Resultatet er akkreditert.&nbsp;<b>Referanse til prøve</b>:&nbsp;11296224&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<td width="150px" colspan="1">
+							<div>S-Glukose</div>
+						</td>
+						<td width="150px" colspan="1">4.9&nbsp;mmol/L&nbsp;
+				</td>
+						<td width="150px" colspan="1">4,0 - 6,0&nbsp;
+		</td>
+						<td width="150px" colspan="1">
+							<div>16.09.15&nbsp;kl.13:49</div>
+						</td>
+						<td colspan="6">Resultatet er akkreditert.&nbsp;<b>Referanse til prøve</b>:&nbsp;11296224&nbsp;
+		<b>Undersøkelsesstatus</b>:&nbsp;Endelig&nbsp;
+		</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 id="ServReq1">Opprinnelig rekvisisjon
+					Medisinsk biokjemi&nbsp;-
+						Ny</h2>
+			<table>
+				<tbody>
+					<tr>
+						<th>Utstedt-dato</th>
+						<td width="200px" colspan="1">13.09.15&nbsp;kl.12:41</td>
+						<th>Ønsket prioritet</th>
+						<td width="200px" colspan="1">Normal</td>
+						<th>Betalingskategori</th>
+						<td width="1000px" colspan="5">Ordinær pasient.</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 id="HCP1">Helsetjenesteenheter</h2>
+			<table>
+				<tbody>
+					<tr style="text-decoration:none">
+						<th colspan="10" class="h3">Tjenesteyter
+				</th>
+					</tr>
+					<tr style="text-decoration:none">
+						<th>Navn</th>
+						<td width="200px">Nordlandssykehuset HF</td>
+						<th>HER-id</th>
+						<td colspan="7">13</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<th>Avdeling</th>
+						<td width="200px">Medisinsk mikrobiologi</td>
+						<th>HER-id</th>
+						<td colspan="7">91843</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<th colspan="10" class="h3">Henvisende instans
+				</th>
+					</tr>
+					<tr style="text-decoration:none">
+						<th>Navn</th>
+						<td width="200px">Oslo legevakt - Sentrum</td>
+						<th>HER-id</th>
+						<td colspan="7">2474</td>
+					</tr>
+					<tr style="text-decoration:none">
+						<th>Avdeling</th>
+						<td width="200px">Legevakttjeneste</td>
+						<th>HER-id</th>
+						<td colspan="7">50073</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="No-line-doc">
+			<h2 style="margin-top:0px;">Dokumentinformasjon</h2>
+			<table>
+				<tbody>
+					<tr>
+						<th>Melding sendt</th>
+						<td width="200px">16.09.15&nbsp;kl.13:51</td>
+						<th>Tjenesteyters id</th>
+						<td width="200px">bf2f0f47-ee1f-40d7-859d-d4bc50176d8f</td>
+						<th>Meldingsid</th>
+						<td>e80c1b37-93e4-4bc0-b7dc-3f4fe252849e</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

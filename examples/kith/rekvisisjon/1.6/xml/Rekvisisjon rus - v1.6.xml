@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15 Rekvisisjon-v1.6.xsd">
+	<Type V="REQ_LAB" DN="Rekvisisjon-Laboratoriemedisin"/>
+	<MIGversion>v1.6 2012-02-15</MIGversion>
+	<GenDate V="2015-05-19T08:34:46"/>
+	<MsgId>375FA59F-32CE-467F-A60E-AA7766725FF2</MsgId>
+	<ServReq>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-05-19T08:29:29"/>
+		<MsgDescr V="CLIN" DN="Medisinsk biokjemi"/>
+		<Id>2f3185d0-1b23-4a55-83fa-95315955e69d</Id>
+		<ServProvId>8c371f8a-4f5e-425a-bb03-59ee3f3be70c</ServProvId>
+		<RequestedPrioReport V="N" DN="Normal"/>
+		<Patient>
+			<Name>Danser, Line</Name>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk biokjemi</Name>
+						<Id>91846</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+				<Name>Kattskinnet legesenter</Name>
+				<Id>91096</Id>
+				<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>	
+				</Inst>
+			</HCP>
+		</Requester>
+		<CopyDest>
+			<Role V="COP" DN="Kopimottaker"/>
+			<CopyDestRole>
+				<MsgType V="R" DN="Rekvisisjon"></MsgType>
+			</CopyDestRole>
+			<HCP>
+				<HCProf>
+					<Name>August September</Name>
+					<Id>9144897</Id>
+					<TypeId V="HPR" DN="HPR-nummer"/>		
+				</HCProf>	
+			</HCP>
+		</CopyDest>
+		<CopyDest>
+			<Role V="COP" DN="Kopimottaker"/>
+			<CopyDestRole>
+				<MsgType V="R" DN="Rekvisisjon"></MsgType>
+			</CopyDestRole>
+			<HCP>
+				<HCProf>
+					<Name>Magnar Koman</Name>
+					<Id>9144889</Id>
+					<TypeId V="HPR" DN="HPR-nummer"/>		
+				</HCProf>	
+			</HCP>
+		</CopyDest>
+		<Comment>
+		<TextResultValue>Receiving system: Dwlab.</TextResultValue>
+		</Comment>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<!--<Id V="248" S="2.16.578.1.12.4.1.1.8213" DN="Benzodiazepiner, kval." OT="Benzodiazepiner, kval."/>-->
+				<Id V="NPU08958" S="2.16.578.1.12.4.1.1.7280" DN="U-Benzodiazepiner"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="250" S="2.16.578.1.12.4.1.1.8213" DN="Kokain, kval." OT="Kokain, kval."/>-->
+				<Id V="NPU01706" S="2.16.578.1.12.4.1.1.7280" DN="U-Kokain"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="246" S="2.16.578.1.12.4.1.1.8213" DN="Amfetamin, kval." OT="Amfetamin, kval."/>-->
+				<Id V="NPU08960" S="2.16.578.1.12.4.1.1.7280" DN="Amfetamin, kval."/>
+			</Investigation>
+			<Investigation>
+			<!--	<Id V="249" S="2.16.578.1.12.4.1.1.8213" DN="Cannabinoider, kval." OT="Cannabinoider, kval."/>-->
+				<Id V="NOR25627" S="2.16.578.1.12.4.1.1.7280" DN="U-Syntetiske cannabinoider (uspesifikk)"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="251" S="2.16.578.1.12.4.1.1.8213" DN="Opioider, kval." OT="Opioider, kval."/>-->
+				<Id V="251" S="2.16.578.1.12.4.1.1.7280" DN="NPU29112"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="586" S="2.16.578.1.12.4.1.1.8213" DN="pH v/misbrukdiag." OT="pH v/misbrukdiag."/>-->
+				<Id V="NPU02415" S="2.16.578.1.12.4.1.1.7280" DN="U-pH"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="587" S="2.16.578.1.12.4.1.1.8213" DN="Kreatinin v/misbrukdiag." OT="Kreatinin v/misbrukdiag."/>-->
+				<Id V="NPU01808" S="2.16.578.1.12.4.1.1.7280" DN="U-Kreatinin"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-19T08:33:36"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="U" DN="Urin"/>
+				<IdByRequester>4CS0I779P-0000050562</IdByRequester>
+				<IdByServProv>0227900227</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+	</ServReq>
+</Message>

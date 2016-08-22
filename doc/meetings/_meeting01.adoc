@@ -1,0 +1,111 @@
+= Oppstartmøte LAB-arketyper
+
+== About
+=== Tid og sted	
+Tid:: Tirsdag 16.august kl. 1000 - 1330
+Sted:: DIPS Oslo + Netmeeting
+Referent:: Jan-Arne Ludvigsen, DIPS ASA
+
+=== Deltagere
+
+* Jon Tysdahl Fürst 
+* Bjørn Næss DIPS ASA
+* Anca Heyd DIPS ASA
+* Ole Martin Ryen Sand DIPS ASA
+* Jan-Arne Ludvigsen, DIPS ASA 
+* Silje Ljosland Bakke Nasjonal IKT
+* Jon Tore Valand Helse Bergen
+* Vebjørn Arntzen OUS
+* Ian McNicoll
+
+== Begrunnelse og mål for møtet 
+Starte arbeidet med å utvikle LAB-arketyper for bruk i LAB-systemer og i elektroniske pasientjournaler. 
+
+== Agenda
+. 	Agenda and objectives of workshop
+. 	Presentation of participants
+. Strategic importance of project, from each of the partners
+. Existing lab-archetypes, status, experiences and needs (Ian)
+. 	Objectives for and results of the project
+. How to organize and perform the project
+.. 	Required skills/participants
+.. Workshops and themes
+.. Methods and tools
+.. Organization, ownership and management
+. Next step
+
+
+
+== 	Referat
+
+Møtet startet med presentasjon av deltagerne og en kort strategisk presentasjon hver av partnerne
+
+* Viktig at de skal være enkle å implementeres og "brukervennlig"
+*	Svært viktig for den kliniske beslutningsstøtte
+*	Skal brukes overalt av alle
+
+Ian presenterte litt historie og status for deres arbeid med LAB arketypene. Ian presenterte en draft som er i bruk og vi må vurdere om vi skal bruke denne som et utgangspunkt for vårt videre arbeid.
+Mikrobiologi er komplisert
+Ian vil ha eksempelfiler med rekvisisjon og svar på KITH XML.
+
+Jon presenterte målene for arbeidet og han utarbeider forslag til mandat som blir tema på neste møte.
+
+== Prosjektorganisering /aktiviteter
+
+*	Viktig å jobbe med hele prosessen for rekvirering, prosesstøtte for labarbeidet, svareksport og svarimport i EPJ, men vi starter med observation(Svar)
+*	Ta utgangspunkt i det som finnes(Det som Ian presenterte)
+*	Arketypene som det skal jobbes med skal legges på eget prosjektområde på CKM
+*	Eksempelfiler på Jason og XML legges som filer på et GIT-repository på arketyper.no
+*	Det må jobbes parallelt med templates.
+*	Arketyper og templates skal på høring før godkjenning
+*	Prosjektet ledes av Fürst og DIPS i fellesskap.
+*	Det settes opp et prosjektmøte hver 14.dag
+*	Nasjonalt Redaksjonsutvalg for Arketyper (NRUA)kan fungere som styringsgruppe 
+*	Nasjonal IKT tar ansvar for høringsrunden.
+*	Deltagere dekker egne utgifter.
+*	Vi må få med både klinisk personell og labpersonell(Lege og Bioingeniør)
+*	Aktiviteter
+**	Sammenlikne arketypen med KITH XML
+**	Oversette arketypen(NIKT). Trenger bistand fra fagpersonell
+**	Sende på høring(NIKT)
+**	Få med klinikere og LABpersonell
+**	Arrangere møter / workshops
+*** 23.	August kl 14.30-16.00
+*** Workshop i uke 37
+
+
+
+==	Aksjonsliste
+[cols="^1,5,2,2", options="header"]
+|===
+|Nr.	|Aksjoner/oppgaver/beslutninger	|Ansv.	|Frist
+|1.
+|Ian vil ha eksempelfiler med rekvisisjon og svar på KITH XML	
+|Jan Arne Ludvigsen	
+|
+|2.
+|Utarbeider forslag til mandat
+|Jon Tysdahl	
+|
+
+|3.
+|Kall inn til neste møte 23. august	
+|Jan-arne Ludvigsen	
+|
+
+|4.
+|Arrangere workshop i uke 37		
+|
+|
+
+|5.
+|Få med klinikere og LABpersonell
+|DIPS og Fürst	
+|
+
+|6.
+|Sende ut høringsforslag	
+|Nasjonal IKT
+|
+
+|===

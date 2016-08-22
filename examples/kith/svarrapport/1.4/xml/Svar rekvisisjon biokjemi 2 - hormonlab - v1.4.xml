@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+	<Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin"/>
+	<MIGversion>v1.4 2012-02-15</MIGversion>
+	<GenDate V="2015-09-02T16:35:36"/>
+	<MsgId>2DD6B3D2-AD76-4774-B3EC-BBABDED32194</MsgId>
+	<ServReport>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-09-02T16:32:12"/>
+		<Status V="F" DN="Endelig rapport"/>
+		<MsgDescr V="CLIN" DN="Medisinsk biokjemi"/>
+		<ServProvId>0ec82827-642e-47e3-b1ec-93b7f46f26d1</ServProvId>
+		<ServReq>
+			<ServType V="N" DN="Ny"/>
+			<IssueDate V="2015-09-02T16:00:23"/>
+			<MsgDescr V="CLIN" DN="Medisinsk biokjemi"/>
+			<Id>8449B5D3-EF42-490A-8DE3-DFAD6C6BDC28</Id>
+			<RequestedPrioReport V="NORM" DN="Normal"/>
+			<IdByServProvider>5c95c2a8-33ee-45f7-8da9-e6b019cfd8b5</IdByServProvider>	
+		</ServReq>
+		<Patient>
+			<Name>Telokk, Gry</Name>
+			<OffId>12057900499</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<Address>
+				<Type V="H" DN="Bostedsadresse"/>
+				<StreetAdr>Lungegaardsbakken 13</StreetAdr>
+				<PostalCode>5020</PostalCode>
+				<City>Bergen</City>
+			</Address>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-09-02T16:07:59"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="S" DN="Serum" />
+				<IdByServProvider>IMM2701269601</IdByServProvider>
+			</AnalysedSubject>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="0.5" U="U/mL"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>&lt; 0,9</Descr>
+				</RefInterval>
+				<Investigation>
+					<!--<Id V="GADA" S="2.16.578.1.12.4.1.1.8212" DN="S-GAD antistoff" OT="S-GAD antistoff"/>-->
+					<Id V="NPU12544" S="2.16.578.1.12.4.1.1.7280" DN="P-GAD65 IgG"/>
+				</Investigation>
+				<InvDate V="2015-09-02T16:32:03"/>
+				<IdResultItem>2701269601_120260</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<StatusChangeDate V="2015-09-02T16:32:12"/>
+				<MedicalValidationDate V="2015-09-02T16:32:12"/>
+				<RefAnalysedSubject>IMM2701269601</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="0.90" U="U/mL"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>&lt; 0,75</Descr>
+				</RefInterval>
+				<Investigation>
+					<!--<Id V="INA2A" S="2.16.578.1.12.4.1.1.8212" DN="S-IA2 antistoff" OT="S-IA2 antistoff"/>-->
+					<Id V="NPU16403" S="2.16.578.1.12.4.1.1.7280" DN="P-Pankreas øycelle (IA-2) antistoff"/>
+				</Investigation>
+				<InvDate V="2015-09-02T16:32:03"/>
+				<DevResultInd V="1" DN="Over øvre referansegrense"/>
+				<IdResultItem>2701269601_120330</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<StatusChangeDate V="2015-09-02T16:32:12"/>
+				<MedicalValidationDate V="2015-09-02T16:32:12"/>
+				<RefAnalysedSubject>IMM2701269601</RefAnalysedSubject>
+			</ResultItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>St. Olavs Hospital</Name>
+					<Id>59</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk biokjemi</Name>
+						<Id>91123</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+				<Name>Kattskinnet legesenter</Name>
+				<Id>91096</Id>
+				<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>	
+				</Inst>
+			</HCP>
+		</Requester>
+	</ServReport>
+</Message>

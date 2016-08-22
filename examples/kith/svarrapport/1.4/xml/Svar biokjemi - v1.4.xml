@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+	<Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin"/>
+	<MIGversion>v1.4 2012-02-15</MIGversion>
+	<GenDate V="2015-06-11T13:51:55"/>
+	<MsgId>81d3bba1-9fda-4272-b4ea-0d6e60374ab2</MsgId>
+	<ServReport>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-06-11T13:51:55"/>
+		<Status V="F" DN="Endelig rapport"/>
+		<MsgDescr V="CLIN" DN="Medisinsk biokjemi"/>
+		<ServProvId>a937ee7c-5d86-453d-ab81-f322b36a2c48</ServProvId>
+		<ServReq>
+			<IssueDate V="2015-06-11"/>
+			<Id>ec2fcf71-8abf-4dd3-972b-f81c26532d70</Id>
+		</ServReq>
+		<Patient>
+			<Name>Danser, Line</Name>
+			<IdByServProvider>10682608</IdByServProvider>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<Address>
+				<Type V="H" DN="Bostedsadresse"/>
+				<StreetAdr>Numedalsveien 52</StreetAdr>
+				<PostalCode>3602</PostalCode>
+				<City>Kongsberg</City>
+			</Address>
+			<InfItem>
+				<Observation>
+					<Description>HIV positiv pasient</Description>
+				</Observation>
+				<Type V="OPPL" DN="Klinisk opplysning"/>
+			</InfItem>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-06-11T13:11:00"/>
+				</CollectedSample>
+				<Type>SR Citrat</Type>
+				<Number>1</Number>
+				<IdByServProvider>1</IdByServProvider>
+			</AnalysedSubject>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-06-11T13:11:00"/>
+				</CollectedSample>
+				<!--<Type>Serum m/u gel</Type>-->
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="S" DN="Serum" />
+				<Number>1</Number>
+				<IdByServProvider>2</IdByServProvider>
+			</AnalysedSubject>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-06-11T13:11:00"/>
+				</CollectedSample>
+				<!--<Type>EDTA-blod</Type>-->
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="B" DN="Blod" />
+				<Number>1</Number>
+				<IdByServProvider>3</IdByServProvider>
+			</AnalysedSubject>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="20" U="mm"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>&lt; 21</Descr>
+				</RefInterval>
+				<Investigation>
+					<!--<Id V="B-SR" S="2.16.578.1.12.4.1.1.8214" DN="B-SR, senkningsreaksjon" OT="B-SR, senkningsreaksjon"/>-->
+					<Id V="NPU03404" S="2.16.578.1.12.4.1.1.7280" DN="B-SR"/>
+				</Investigation>
+				<IdResultItem>188680652</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>1</RefAnalysedSubject>
+				<Accredited V="false"/>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="25" U="pmol/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>10 - 22</Descr>
+				</RefInterval>
+				<Investigation>
+					<!--<Id V="S-FT4" S="2.16.578.1.12.4.1.1.8214" DN="S-FT4" OT="S-FT4"/>-->
+					<Id V="NOR05863" S="2.16.578.1.12.4.1.1.7280" DN="Us-FT4"/>
+				</Investigation>
+				<Comment>Test av tidligere analyseresultat</Comment>
+				<DevResultInd V="1" DN="Over øvre referansegrense"/>
+				<IdResultItem>188680650</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>2</RefAnalysedSubject>
+				<Accredited V="false"/>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="16.0" U="g/dL"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>11,7 - 15,3</Descr>
+				</RefInterval>
+				<Investigation>
+					<!--	<Id V="B-HB" S="2.16.578.1.12.4.1.1.8214" DN="B-Hemoglobin" OT="B-Hemoglobin"/>-->
+					<Id V="NOR05172" S="2.16.578.1.12.4.1.1.7280" DN="B-Hemoglobin"/>
+				</Investigation>
+				<DevResultInd V="1" DN="Over øvre referansegrense"/>
+				<IdResultItem>188680651</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>3</RefAnalysedSubject>
+				<Accredited V="false"/>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="4.6" U="10E-3/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>0,3 - 4,5</Descr>
+				</RefInterval>
+				<Investigation>
+					<!--<Id V="S-TSH" S="2.16.578.1.12.4.1.1.8214" DN="S-TSH" OT="S-TSH"/>-->
+					<Id V="NOR05865" S="2.16.578.1.12.4.1.1.7280" DN="Us-TSH"/>
+				</Investigation>
+				<DevResultInd V="1" DN="Over øvre referansegrense"/>
+				<IdResultItem>188680649</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>2</RefAnalysedSubject>
+				<Accredited V="false"/>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="7.7" U="pmol/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>3,5 - 7,0</Descr>
+				</RefInterval>
+				<Investigation>
+					<!--<Id V="S-FT3" S="2.16.578.1.12.4.1.1.8214" DN="S-FT3 (fritt T3)" OT="S-FT3 (fritt T3)"/>-->
+					<Id V="NOR05864" S="2.16.578.1.12.4.1.1.7280" DN="Us-FT3"/>					
+				</Investigation>
+				<DevResultInd V="1" DN="Over øvre referansegrense"/>
+				<IdResultItem>188680648</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>2</RefAnalysedSubject>
+				<Accredited V="false"/>
+			</ResultItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk biokjemi</Name>
+						<Id>91846</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<ComMethod V="EDI" DN="EDI"/>
+			<HCP>
+				<Inst>
+					<Name>Narvik kommune</Name>
+					<Id>71037</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Narvik Helsestasjon</Name>
+						<Id>87933</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+				<Address>
+					<Type V="PST" DN="Postadresse"/>
+					<StreetAdr>Kongens gate 45, postmottak</StreetAdr>
+					<PostalCode>8514</PostalCode>
+					<City>Narvik</City>
+				</Address>
+			</HCP>
+		</Requester>
+		<RelServProv>
+			<Relation V="REK" DN="Rekvirent"/>
+			<HCP>
+				<Inst>
+				<Name>Kattskinnet legesenter</Name>
+				<Id>91096</Id>
+				<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>9144900</Id>
+						<TypeId V="HPR" DN="HPR-nummer"/>		
+					</HCPerson>	
+				</Inst>
+			</HCP>
+		</RelServProv>
+	</ServReport>
+</Message>

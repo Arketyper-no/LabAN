@@ -1,0 +1,20 @@
+= Meeting 2 
+== About
+=== Tid og sted	
+Tid:: Tirsdag 23.august kl. 1430 - 1600
+Sted:: Skype meeting
+
+=== Deltagere
+
+* Jon Tysdahl Fürst 
+* Bjørn Næss DIPS ASA
+* Anca Heyd DIPS ASA
+* Ole Martin Ryen Sand DIPS ASA
+* Silje Ljosland Bakke Nasjonal IKT
+* Jan-Arne Ludvigsen, DIPS ASA
+* Jon Tore Valand Helse Bergen
+* Vebjørn Arntzen OUS
+* Ian McNicoll
+
+== Begrunnelse og mål for møtet 
+Follow up meeting after kick-off last week. Prepare project mandate and plan the next steps. 

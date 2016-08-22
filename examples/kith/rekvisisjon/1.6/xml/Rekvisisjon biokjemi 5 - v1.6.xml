@@ -1,0 +1,192 @@
+<Message xmlns="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15 Rekvisisjon-v1.6.xsd">
+	<Type V="REQ_LAB" DN="Rekvisisjon-Laboratoriemedisin"/>
+	<MsgVersion>v1.6 2012-02-15</MsgVersion>
+	<MIGversion>v1.6 2012-02-15</MIGversion>
+	<GenDate V="2015-09-16T13:46:51"/>
+	<MsgId>5ab7fc83-e9d5-4291-b92c-7ebd88be8311</MsgId>
+	<ServReq>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-09-16T13:46:53"/>
+		<PaymentCat V="1" DN="Ordinær pasient"/>
+		<MsgDescr V="CLIN" DN="Medisinsk biokjemi"/>
+		<Id>4ad1fcd2-419e-46c5-9297-de97b0bafffc</Id>
+		<RequestedPrioReport V="H" DN="Høy"/>
+		<Patient>
+			<Name>Danser, Line</Name>
+			<IdByRequester>42526582</IdByRequester>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<AdmLocation>
+				<Role V="1" DN="Oppholdssted"/>
+				<StartDateTime V="2015-09-16T13:23:54"/>
+				<AdmCat V="1" DN="Heldøgnsopphold"/>
+				<Location>
+					<Type V="2" DN="Institusjon og avdeling"/>
+					<SubLocation>
+						<Type V="4" DN="Seng"/>
+						<Place>A Aku3</Place>
+					</SubLocation>
+					<SubLocation>
+						<Type V="2" DN="Sengepost"/>
+						<Place>AKMM1</Place>
+					</SubLocation>
+					<Inst>
+						<Name>Oslo universitetssykehus</Name>
+						<Id>87711</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Inst>
+				</Location>
+			</AdmLocation>
+			<Address>
+				<Type V="H" DN="Bostedsadresse"/>
+				<StreetAdr>Numedalsveien 52</StreetAdr>
+				<PostalCode>3602</PostalCode>
+				<City>Kongsberg</City>
+			</Address>
+			<InfItem>
+				<Observation>
+					<Description>Hodepine</Description>
+				</Observation>
+				<Type V="OPPL" DN="Klinisk opplysning"/>
+				<OrgDate V="2015-09-16T13:48:00"/>
+			</InfItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk biokjemi</Name>
+						<Id>91846</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+				<Name>Kattskinnet legesenter</Name>
+				<Id>91096</Id>
+				<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>	
+				</Inst>
+			</HCP>
+		</Requester>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<Id V="NOR05172" S="2.16.578.1.12.4.1.1.7280" DN="B-Hemoglobin"/>
+				<!--<Id V="HB" S="2.16.578.1.12.4.1.1.8212" DN="B-Hemoglobin" OT="B-Hemoglobin"/>-->
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<Id V="NOR05952" S="2.16.578.1.12.4.1.1.7280" DN="B-rMCV"/>
+				<!--	<Id V="MCV" S="2.16.578.1.12.4.1.1.8212" DN="B-MCV" OT="B-MCV"/>-->
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<Id V="NPU03568" S="2.16.578.1.12.4.1.1.7280" DN="B-Trombocytter"/>
+				<!--<Id V="TRC" S="2.16.578.1.12.4.1.1.8212" DN="B-Trombocytter" OT="B-Trombocytter"/>-->
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<Id V="NPU02593" S="2.16.578.1.12.4.1.1.7280" DN="B-Leukocytter"/>
+				<!--	<Id V="LEUK" S="2.16.578.1.12.4.1.1.8212" DN="B-Leukocytter" OT="B-Leukocytter"/>-->
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<Id V="NPU03404" S="2.16.578.1.12.4.1.1.7280" DN="B-SR"/>
+				<!--<Id V="SR" S="2.16.578.1.12.4.1.1.8212" DN="B-SR" OT="B-SR"/>-->
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<Id V="NOR25613" S="2.16.578.1.12.4.1.1.7280" DN="S-Natrium"/>
+				<!--<Id V="SNA" S="2.16.578.1.12.4.1.1.8212" DN="S-Natrium" OT="S-Natrium"/>-->
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<Id V="NOR25614" S="2.16.578.1.12.4.1.1.7280" DN="S-Kalium"/>
+				<!--	<Id V="SK" S="2.16.578.1.12.4.1.1.8212" DN="S-Kalium" OT="S-Kalium"/>-->
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<Id V="NPU02647" S="2.16.578.1.12.4.1.1.7280" DN="P-Magnesium"/>
+				<!--<Id V="MG" S="2.16.578.1.12.4.1.1.8212" DN="P-Magnesium" OT="P-Magnesium"/>-->
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<Id V="NPU27501" S="2.16.578.1.12.4.1.1.7280" DN="P-Troponin T"/>
+				<!--	<Id V="TNT" S="2.16.578.1.12.4.1.1.8212" DN="P-Troponin T" OT="P-Troponin T"/>-->
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<Id V="NPU26811" S="2.16.578.1.12.4.1.1.7280" DN="P-NT-proBNP"/>
+				<!--	<Id V="PROBNP" S="2.16.578.1.12.4.1.1.8212" DN="P-NT-proBNP" OT="P-NT-proBNP"/>-->
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<Id V="NPU04998" S="2.16.578.1.12.4.1.1.7280" DN="P-Kreatinin"/>
+				<!--	<Id V="KREA" S="2.16.578.1.12.4.1.1.8212" DN="P-Kreatinin" OT="P-Kreatinin"/>-->
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<Id V="NOR25616" S="2.16.578.1.12.4.1.1.7280" DN="S-Glukose"/>
+				<!--<Id V="SGLU" S="2.16.578.1.12.4.1.1.8212" DN="S-Glukose" OT="S-Glukose"/>-->
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<Id V="NPU29296" S="2.16.578.1.12.4.1.1.7280" DN="B-HbA1c"/>
+				<!--<Id V="HBA1C" S="2.16.578.1.12.4.1.1.8212" DN="B-HbA1c" OT="B-HbA1c"/>-->
+			</Investigation>
+			<Investigation>
+				<Id V="NPU01566" S="2.16.578.1.12.4.1.1.7280" DN="P-Kolesterol"/>
+				<!--<Id V="KOL" S="2.16.578.1.12.4.1.1.8212" DN="P-Kolesterol" OT="P-Kolesterol"/>-->
+			</Investigation>
+			<Investigation>
+				<Id V="NPU01567" S="2.16.578.1.12.4.1.1.7280" DN="P-HDL-Kolesterol"/>
+				<!--<Id V="HDLK" S="2.16.578.1.12.4.1.1.8212" DN="P-HDL-Kolesterol" OT="P-HDL-Kolesterol"/>-->
+			</Investigation>
+			<Investigation>
+				<Id V="NPU01568" S="2.16.578.1.12.4.1.1.7280" DN="P-LDL-Kolesterol"/>
+				<!--<Id V="LDLK" S="2.16.578.1.12.4.1.1.8212" DN="P-LDL-Kolesterol" OT="P-LDL-Kolesterol"/>-->
+			</Investigation>
+			<Investigation>
+				<Id V="NPU19748" S="2.16.578.1.12.4.1.1.7280" DN="P-CRP"/>
+				<!--<Id V="CRP" S="2.16.578.1.12.4.1.1.8212" DN="P-CRP" OT="P-CRP"/>-->
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<Id V="NPU19673" S="2.16.578.1.12.4.1.1.7280" DN="P-Albumin"/>
+				<!--<Id V="ALB" S="2.16.578.1.12.4.1.1.8212" DN="P-Albumin" OT="P-Albumin"/>-->
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="STP" S="2.16.578.1.12.4.1.1.8212" DN="S-Totalprotein" OT="S-Totalprotein"/>-->
+				<Id V="NOR25617" S="2.16.578.1.12.4.1.1.7280" DN="S-Protein, total"/>
+				<Priority V="0" DN="Øyeblikkelig hjelp"/>
+			</Investigation>
+			<Investigation>
+				<Id V="NPU03577" S="2.16.578.1.12.4.1.1.7280" DN="P-TSH"/>
+				<!--<Id V="TSH" S="2.16.578.1.12.4.1.1.8212" DN="P-TSH" OT="P-TSH"/>-->
+			</Investigation>
+			<Investigation>
+				<Id V="NPU03579" S="2.16.578.1.12.4.1.1.7280" DN="P-T4, fritt"/>
+				<!--<Id V="FT4" S="2.16.578.1.12.4.1.1.8212" DN="P-FT4" OT="P-FT4"/>-->
+			</Investigation>
+			<AnalysedSubject>
+				<RequestedSubject>
+					<ReqDate V="2015-09-16T13:48:00"/>
+				</RequestedSubject>
+				<IdByRequester>28917847</IdByRequester>
+				<SampleCollInd V="2" DN="Nei"/>
+			</AnalysedSubject>
+		</ReqInvestigation>
+	</ServReq>
+</Message>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15 Rekvisisjon-v1.6.xsd">
+	<Type V="REQ_LAB" DN="Rekvisisjon-Laboratoriemedisin"/>
+	<MIGversion>v1.6 2012-02-15</MIGversion>
+	<GenDate V="2015-05-18T08:54:01"/>
+	<MsgId>8D19B934-262C-4C8C-B253-B9A0CE0550A4</MsgId>
+	<ServReq>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-05-18T08:51:11"/>
+		<MsgDescr V="CLIN" DN="Medisinsk biokjemi"/>
+		<Id>2262882F-CCDB-4A5B-8A94-CF0E6B1AD059</Id>
+		<ServProvId>ddb6ddaa-0cdf-4894-b275-c732b50704bc</ServProvId>
+		<RequestedPrioReport V="N" DN="Normal"/>
+		<Patient>
+			<Name>Danser, Line</Name>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk biokjemi</Name>
+						<Id>91846</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Kattskinnet legesenter</Name>
+					<Id>91096</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>
+				</Inst>
+			</HCP>
+		</Requester>
+		<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>Triglyserid: Fastende: Vet ikke</TextResultValue>
+		</ReasonAsText>
+		<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>Digoksin: Dosering og timer siden siste dose: Ukjent"</TextResultValue>
+		</ReasonAsText>
+				<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>Andre Analyser: Test som ønskes/ angi prøvemateriale: oxycodon</TextResultValue>
+		</ReasonAsText>
+		<Comment>
+			<TextResultValue>Receiving system: Dwlab. Medisinsk biokjemi</TextResultValue>
+		</Comment>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<!--<Id V="23" S="2.16.578.1.12.4.1.1.8213" DN="Natrium (Na+)" OT="Natrium (Na+)"/>-->
+				<Id V="NPU03429" S="2.16.578.1.12.4.1.1.7280" DN="P-Natrium"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="25" S="2.16.578.1.12.4.1.1.8213" DN="Kalium (K+)" OT="Kalium (K+)"/>-->
+				<Id V="NPU03230" S="2.16.578.1.12.4.1.1.7280" DN="P-Kalium"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="51" S="2.16.578.1.12.4.1.1.8213" DN="Ferritin" OT="Ferritin"/>-->
+				<Id V="NOR05809" S="2.16.578.1.12.4.1.1.7280" DN="Us-Ferritin"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="11" S="2.16.578.1.12.4.1.1.8213" DN="Triglyserid" OT="Triglyserid"/>-->
+				<Id V="NPU18106" S="2.16.578.1.12.4.1.1.7280" DN="Us-Triglyserid"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="56" S="2.16.578.1.12.4.1.1.8213" DN="TSH" OT="TSH"/>-->
+				<Id V="NOR05865" S="2.16.578.1.12.4.1.1.7280" DN="Us-TSH"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="55" S="2.16.578.1.12.4.1.1.8213" DN="FT4" OT="FT4"/>-->
+				<Id V="NOR05863" S="2.16.578.1.12.4.1.1.7280" DN="Us-FT4"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="150" S="2.16.578.1.12.4.1.1.8213" DN="Digoksin" OT="Digoksin"/>-->
+				<Id V="NPU29868" S="2.16.578.1.12.4.1.1.7280" DN="P-Digoksin"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-18T08:52:15"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="S" DN="Serum"/>
+				<IdByRequester>2262882F-CCDB-4A5B-8A94-CF0E6B1AD059</IdByRequester>
+				<IdByServProv>0027884308</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<Id V="NPU04073" S="2.16.578.1.12.4.1.1.7280" DN="P-Homocystein"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-18T08:52:15"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="P" DN="Plasma"/>
+				<IdByRequester>2262882F-CCDB-4A5B-8A94-CF0E6B1AD059</IdByRequester>
+				<IdByServProv>0327884308</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<!--<Id V="978" S="2.16.578.1.12.4.1.1.8213" DN="Anti-gliadin IgG" OT="Anti-gliadin IgG"/>-->
+				<Id V="NPU12537" S="2.16.578.1.12.4.1.1.7280" DN="P-Gliadin IgG"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="791" S="2.16.578.1.12.4.1.1.8213" DN="Anti-transglut. IgA" OT="Anti-transglut. IgA"/>-->
+				<Id V="NPU14566" S="2.16.578.1.12.4.1.1.7280" DN="P-Transglutaminase IgA"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-18T08:52:15"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="S" DN="Serum"/>
+				<IdByRequester>2262882F-CCDB-4A5B-8A94-CF0E6B1AD059</IdByRequester>
+				<IdByServProv>0027884308</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+	</ServReq>
+</Message>

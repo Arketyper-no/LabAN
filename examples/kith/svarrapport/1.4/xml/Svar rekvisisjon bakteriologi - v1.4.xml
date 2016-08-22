@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+	<Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin"/>
+	<MIGversion>v1.4 2012-02-15</MIGversion>
+	<GenDate V="2015-09-02T14:43:02"/>
+	<MsgId>CCADE118-5661-44A5-B59B-F6E733559C13</MsgId>
+	<ServReport>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-09-02T14:40:53"/>
+		<Status V="F" DN="Endelig rapport"/>
+		<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+		<ServProvId>566950c5-cda8-41ad-bd1c-7bfab3cfed97</ServProvId>
+		<ServReq>
+			<ServType V="N" DN="Ny"/>
+			<IssueDate V="2015-09-02T14:34:42"/>
+			<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+			<Id>9F9F6954-8A05-4E51-BDF9-8F956A6A0C57</Id>
+			<RequestedPrioReport V="NORM" DN="Normal"/>
+			<IdByServProvider>4c0906af-53a6-4e9b-865f-2b399f402d82</IdByServProvider>
+		</ServReq>
+		<Patient>
+			<Name>Telokk, Gry</Name>
+			<OffId>12057900499</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-09-02T14:35:19"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="UM" DN="Urin midtstråle"/>
+				<IdByServProvider>27012693</IdByServProvider>
+				<Accredited V="false"/>
+			</AnalysedSubject>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>Vekst</TextResultValue>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<!--<Id V="DYUP10" DN="Dyrkning aerobt" S="2.16.578.1.12.4.1.1.8212" OT="Dyrkning aerobt"/>-->
+					<Id V="NPU17956" S="2.16.578.1.12.4.1.1.7280" DN="Us-Anaerobt dyrkning"/>
+				</Investigation>
+				<InvDate V="2015-09-02T14:42:26"/>
+				<IdResultItem>NPU17956_0</IdResultItem>
+				<RefAnalysedSubject>27012693</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>Escherichia coli</TextResultValue>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id S="2.16.578.1.12.4.1.1.7280" OT="Identifikasjon"/>
+				</Investigation>
+				<InvDate V="2015-09-02T14:42:26"/>
+				<IdResultItem>ESCOLI_1</IdResultItem>
+				<RefAnalysedSubject>27012693</RefAnalysedSubject>
+				<ResultItem>
+					<TextResult>
+						<TextResultValue>&gt;100.000 pr.ml.</TextResultValue>
+					</TextResult>
+					<Investigation>
+						<Id S="2.16.578.1.12.4.1.1.7280" OT="Mengde"/>
+					</Investigation>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="RSB" DN="Resistensbestemmelse"/>
+						<TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent"/>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU06045" DN="Us-Ampicillin" S="2.16.578.1.12.4.1.1.7280"/>
+						<!--<Id S="2.16.578.1.12.4.1.1.8212" OT="Ampicillin" DN="Ampicillin"/>-->
+					</Investigation>
+					<InvDate V="2015-09-02T14:42:26"/>
+					<IdResultItem>AMP_D_1_1</IdResultItem>
+					<RefIdResultItem>ESCOLI_1</RefIdResultItem>
+					<RefAnalysedSubject>27012693</RefAnalysedSubject>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="RSB" DN="Resistensbestemmelse"/>
+						<TextCode S="2.16.578.1.12.4.1.1.8271" V="I" DN="Intermediært følsom"/>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU06044" DN="Us-Mecillinam" S="2.16.578.1.12.4.1.1.7280"/>
+					</Investigation>
+					<InvDate V="2015-09-02T14:42:26"/>
+					<IdResultItem>MEL_D_1_2</IdResultItem>
+					<RefIdResultItem>ESCOLI_1</RefIdResultItem>
+					<RefAnalysedSubject>27012693</RefAnalysedSubject>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="RSB" DN="Resistensbestemmelse"/>
+						<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU06047" DN="Us-Trimetoprim" S="2.16.578.1.12.4.1.1.7280"/>
+					</Investigation>
+					<InvDate V="2015-09-02T14:42:26"/>
+					<IdResultItem>W_D_1_3</IdResultItem>
+					<RefIdResultItem>ESCOLI_1</RefIdResultItem>
+					<RefAnalysedSubject>27012693</RefAnalysedSubject>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="RSB" DN="Resistensbestemmelse"/>
+						<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU07436" DN="Us-Trimetoprim-Sulfametoksazol" S="2.16.578.1.12.4.1.1.7280"/>
+					</Investigation>
+					<InvDate V="2015-09-02T14:42:26"/>
+					<IdResultItem>SXT_D_1_4</IdResultItem>
+					<RefIdResultItem>ESCOLI_1</RefIdResultItem>
+					<RefAnalysedSubject>27012693</RefAnalysedSubject>
+				</ResultItem>
+				<ResultItem>
+					<TextResult>
+						<Heading V="RSB" DN="Resistensbestemmelse"/>
+						<TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent"/>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id V="NPU06048" DN="Us-Nitrofurantoin" S="2.16.578.1.12.4.1.1.7280"/>
+					</Investigation>
+					<InvDate V="2015-09-02T14:42:26"/>
+					<IdResultItem>F_D_1_5</IdResultItem>
+					<RefIdResultItem>ESCOLI_1</RefIdResultItem>
+					<RefAnalysedSubject>27012693</RefAnalysedSubject>
+				</ResultItem>
+			</ResultItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>St. Olavs Hospital</Name>
+					<Id>59</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk mikrobiologi</Name>
+						<Id>91126</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Trondheim kommune</Name>
+					<Id>2342</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Legetjeneste, pleie- og omsorg</Name>
+						<Id>88218</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</Requester>
+	</ServReport>
+</Message>

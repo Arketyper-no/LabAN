@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+	<Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin"/>
+	<MIGversion>v1.4 2012-02-15</MIGversion>
+	<GenDate V="2015-05-13T15:04:01"/>
+	<MsgId>0ba85678-3d70-4599-91bc-3fc2d9cb4ad3</MsgId>
+	<ServReport>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-05-13T15:04:01"/>
+		<Status V="F" DN="Endelig rapport"/>
+		<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+		<ServProvId>cf548a1e-2406-47db-96cd-ea21e03fb557</ServProvId>
+		<ServReq>
+			<ServType V="N" DN="Ny"/>
+			<IssueDate V="2015-05-13T12:24:04"/>
+			<PaymentCat V="1" DN="Ordinær pasient"/>
+			<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+			<Id>5ebc375a-40fd-4824-a3e6-3eae57fc8bca</Id>
+			<IdByServProvider>e5e04e41-0cc3-479f-8ebe-d95fbbec3ca5</IdByServProvider>
+		</ServReq>
+		<Patient>
+			<Name>Danser, Line</Name>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-13T12:25:57"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="A" DN="Abscessinnhold" />
+				<IdByServProvider>80041141BSC</IdByServProvider>
+			</AnalysedSubject>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>STAPHYLOCOCCUS AUREUS</TextResultValue>
+				</TextResult>
+				<Investigation>
+					<!--<Id V="ABC-AER" S="2.16.578.1.12.4.1.1.8212" DN="Abscessinnhold-Dyrkning aerobt" OT="Abscessinnhold-Dyrkning aerobt"/>-->
+					<Id V="NPU17956" S="2.16.578.1.12.4.1.1.7280" DN="Us-Anaerobt dyrkning"/>
+				</Investigation>
+				<IdResultItem>1</IdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+				<ResultItem>
+					<TextResult>
+						<TextResultValue>Rik vekst </TextResultValue>
+					</TextResult>
+					<Investigation>
+						<Id S="2.16.578.1.12.4.1.1.8212" OT="Mengde"/>
+					</Investigation>
+				</ResultItem>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>Negativ</TextResultValue>
+				</TextResult>
+				<Investigation>
+					<Id S="2.16.578.1.12.4.1.1.8212" OT="Abscessinnhold-Dyrkning anaerobt"/>
+				</Investigation>
+				<IdResultItem>2</IdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<!--<Id S="2.16.578.1.12.4.1.1.8212" OT="Clindamycin"/>-->
+					<Id V="NPU06034" S="2.16.578.1.12.4.1.1.7280" DN="Us-Klindamycin"/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<!--<Id S="2.16.578.1.12.4.1.1.8212" OT="Erytromycin"/>-->
+					<Id V="NPU06050" S="2.16.578.1.12.4.1.1.7280" DN="Us-Erytromycin"/>
+					<Comment>Erytromycin er grupperepresentant for alle makrolider.</Comment>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<!--<Id S="2.16.578.1.12.4.1.1.8212" OT="Fucidin "/>-->
+					<Id V="NPU06030" S="2.16.578.1.12.4.1.1.7280" DN="Us-Fusidinsyre "/>
+					<Comment>Fucidin anbefales ikke som monoterapi ved systemisk bruk pga fare for resistensutvikling. Kombinasjonsbehandling med andre antibiotika for eksempel penicillin, kloxacillin/dikloxacillin, erythromycin, cefalosporiner eller rifampicin anbefales.</Comment>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="S" DN="Sensitiv"/>
+				</TextResult>
+				<Investigation>
+					<!--<Id S="2.16.578.1.12.4.1.1.8212" OT="Oxacillin "/>-->
+					<Id V="NPU06059" S="2.16.578.1.12.4.1.1.7280" DN="Us-Dicloxacillin "/>
+					<Comment>Stafylokokkers følsomhet for oxacillin kan overføres til betalaktamasestabile penicilliner (kloxacillin/dikloxacillin), betalaktamaseinhibitor-kombinasjoner, cefalosporiner (unntatt ceftazidim) og karbapenemer.</Comment>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextCode S="2.16.578.1.12.4.1.1.8271" V="R" DN="Resistent"/>
+				</TextResult>
+				<Investigation>
+					<!--<Id S="2.16.578.1.12.4.1.1.8212" OT="Penicillin G"/>-->
+					<Id V="NPU06008" S="2.16.578.1.12.4.1.1.7280" DN="Us-Penicillin G"/>
+				</Investigation>
+				<RefIdResultItem>1</RefIdResultItem>
+				<RefAnalysedSubject>80041141BSC</RefAnalysedSubject>
+			</ResultItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk Mikrobiologi</Name>
+						<Id>91843</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+				<Name>Kattskinnet legesenter</Name>
+				<Id>91096</Id>
+				<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>	
+				</Inst>
+			</HCP>
+		</Requester>
+	</ServReport>
+</Message>

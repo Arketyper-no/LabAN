@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+	<Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin"/>
+	<MIGversion>v1.4 2012-02-15</MIGversion>
+	<GenDate V="2015-09-16T13:51:07"/>
+	<MsgId>e80c1b37-93e4-4bc0-b7dc-3f4fe252849e</MsgId>
+	<ServReport>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-09-16T12:43:00"/>
+		<Status V="F" DN="Endelig rapport"/>
+		<MsgDescr V="CLIN" DN="Medisinsk biokjemi"/>
+		<ServProvId>bf2f0f47-ee1f-40d7-859d-d4bc50176d8f</ServProvId>
+		<ServReq>
+			<ServType V="N" DN="Ny"/>
+			<IssueDate V="2015-09-13T12:41:00"/>
+			<PaymentCat V="1" DN="Ordinær pasient"/>
+			<MsgDescr V="CLIN" DN="Medisinsk biokjemi"/>
+			<Id>bf2f0f47-ee1f-40d7-859d-d4bc50176d8f</Id>
+			<RequestedPrioReport V="NORM" DN="Normal"/>
+			<IdByServProvider>df382739-26d4-4428-917f-d7609bfa6659</IdByServProvider>
+		</ServReq>
+		<Patient>
+			<Name>And, Andine</Name>
+			<OffId>70019950032</OffId>
+			<TypeOffId V="DNR" DN="D-nummer"/>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-09-16T11:20:00"/>
+				</CollectedSample>
+				<IdByServProvider>11296224</IdByServProvider>
+			</AnalysedSubject>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="79" U="µmol/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>60 - 105</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU04998" S="2.16.578.1.12.4.1.1.7280" DN="P-Kreatinin"/>
+					<!--<Id V="SKRE" S="2.16.578.1.12.4.1.1.8212" OT="P-Kreatinin"/>-->
+				</Investigation>
+				<InvDate V="2015-09-16T13:49:59"/>
+				<IdResultItem>1</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>11296224</RefAnalysedSubject>
+				<Accredited V="true"/>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="113" U="mL/min/1.73 m2"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>&gt; 60</Descr>
+				</RefInterval>
+				<Investigation>
+					<!--<Id V="OUS50164" S="2.16.578.1.12.4.1.1.8212" OT="Pt-GFR estimert fra kreatinin"/>-->
+					<Id V="NOR15245" S="2.16.578.1.12.4.1.1.7280" DN="Pt-GFR estimert"/>
+				</Investigation>
+				<InvDate V="2015-09-16T13:49:59"/>
+				<IdResultItem>2</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>11296224</RefAnalysedSubject>
+				<Accredited V="false"/>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="0.7" U="mg/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>0,0 - 4,0</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU19748" S="2.16.578.1.12.4.1.1.7280" DN="P-CRP"/>
+					<!--<Id V="SCRP" S="2.16.578.1.12.4.1.1.8212" OT="P-CRP"/>-->
+				</Investigation>
+				<InvDate V="2015-09-16T13:49:59"/>
+				<IdResultItem>3</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>11296224</RefAnalysedSubject>
+				<Accredited V="true"/>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="4.9" U="mmol/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>4,0 - 6,0</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NOR25616" S="2.16.578.1.12.4.1.1.7280" DN="S-Glukose"/>
+					<!--<Id V="SGLU" S="2.16.578.1.12.4.1.1.8212" OT="S-Glukose"/>-->
+				</Investigation>
+				<InvDate V="2015-09-16T13:49:59"/>
+				<IdResultItem>4</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>11296224</RefAnalysedSubject>
+				<Accredited V="true"/>
+			</ResultItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk mikrobiologi</Name>
+						<Id>91843</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Oslo legevakt - Sentrum</Name>
+					<Id>2474</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Legevakttjeneste</Name>
+						<Id>50073</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</Requester>
+	</ServReport>
+</Message>

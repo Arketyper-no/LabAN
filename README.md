@@ -1,2 +1,0 @@
-# LabAN
-LaboratorieArketyper for Norge

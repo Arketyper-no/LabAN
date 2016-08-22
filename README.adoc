@@ -1,0 +1,209 @@
+= Prosjektmandat «Laboratorie Arketyper for Norge» LabAN
+
+
+== ENDRINGSLOGG:
+
+Versjon: 0.1
+Dato: 17.8.2016
+
+|===
+|Dato	|Versjon	|Endret av	|Punkt / side	|Endring / kommentar
+|17.8.2016 |	0.1	|JT	|Hele	|Første utkast
+|===
+
+== Bakgrunn
+
+OpenEHR er en internasjonal standard for helseinformatikk. Mer om denne her: www.openehr.org.  Denne har fått oppmerksomhet i Norge og sykehusene i form av Nasjonal IKT har besluttet å ta denne i bruk og tilpasse innholdet til norsk. Flere leverandører har interessert seg for OpenEHR og DIPS med DIPS Arena og Fürst med WebMed støtter begge OpenEHR. En rekke arketyper er oversatt til norsk, mens mange er i arbeid.  Nasjonal IKT har tatt ansvaret for håndtering av oversettelser til norsk og koordinering med det internasjonale arbeidet.
+
+Det har eksistert ulike utkast til lab-arketyper internasjonalt i en stund, og man har med erfaringer fra disse kommet langt i et arbeidet med å skissere nye og bedre versjoner som kan godkjennes. Man har i Norge et ønske om å komme i gang med bruk av OpenEHr på lab-området, og tiden er derfor inne til å gripe fatt i de nye utkastene og sjekke at disse egner seg for våre behov.
+
+Prosjektets navn er Laboratorie Arketyper for Norge, forkortet LabAN.
+
+
+
+==	Målbilde
+
+=== Formål
+Legge grunnlaget for utvikling av lab-systemer basert på OpenEHR i Norge. Utvikle og spre kunnskap om lab-arketyper i Norge.
+
+
+=== Resultatmål
+
+Innen utløpet av 2016 ha etablert:
+
+*	Forslag til endringer i de foreliggende forslag til engelske arketyper og templater på lab-området
+* Oversatte lab-arketypene til norsk
+* Lab-templater for norsk bruk
+* En felles forståelse av lab-området og implementasjonen i OpenEHR for Norge
+
+
+
+
+==	Omfang, rammebetingelser og avgrensning
+
+=== OMFANG:
+Arbeidet skal dekke fagområdene rekvirering av lab-analyser, håndteringen i laboratoriet og håndtering av svarene. Det skal dekke alle disipliner innen lab.
+
+=== RAMMEBETINGELSER:
+Det finnes en rekke rammebetingelser som påvirker og regulerer det norske markedet, og sentrale her er:
+
+*	Lover og forskrifter
+*	Norm for informasjonssikkerhet i helsesektoren
+*	KITH-meldinger
+*	Nasjonalt laboratoriekodeverk
+*	Andre relevante nasjonale kodeverk på Volven
+
+
+=== AVGRENSNING:
+Mangler her….
+
+==	Prosjektorganisering
+Prosjektet styres og eies av DIPS og Fürst i samarbeid med Nasjonal IKT og andre.
+
+=== Prosjektorganisering
+Prosjektet har ikke noen styringsgruppe, men rapporterer til linjen hos DIPS og Fürst.
+
+Prosjektet vil ha en prosjektledelsesgruppe som møtes ca 2 ganger per måned i faste møter. I denne gruppen deltar:
+
+* Bjørn Næss, DIPS
+* Anca Heyd, DIPS
+* Jon Tysdahl, Fürst
+* Silje Ljosland Bakke, Nasjonal IKT
+* m.fl.
+
+En bredere gruppe med fagfolk vil bli trukket med i workshops for å drøfte det faglige. Denne gruppen med fagfolk omfatter:
+
+* Johan Bjerner, lege, Fürst
+* Torleif Trydal, lege, Fürst
+
+
+De viktigste beslutningene i prosjektet dreier seg om den faglige utforming av resultatene, og dette besluttes på lavest mulig nivå. Godkjenning av de faglige resultatene skjer i regi av Nasjonal IKT og/eller OpenEHR.
+
+=== Prosjektadministrasjon
+Dokumenter i prosjektet deles gjennom prosjektområde på arketyper.no og en tilhørende Git, som settes opp av nasjonal IKT.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+== Gjennomføringsplan
+
+
+Det antas at de foreliggende utkastene har en rimelig god kvalitet og at større omarbeidinger av grunnlaget ikke er nødvendig.
+
+Utviklingsarbeidet vil legges opp som en serie med workshops, der de ulike tema håndteres i en fornuftig rekkefølge.
+
+Første workshop vil bli i uke 37 og vil ha mapping mot KITH-svarbrev som utgangspunkt.
+
+Deretter vil rekvirering ha fokus, men man til slutt har fokus på det lab-interne.
+
+
+
+
+
+
+
+
+== Suksessfaktorer og risikoområder
+
+=== Risikoanalyse
+
+Dette kapittelet redegjør kort for prosjektets risikobilde. Forklaring til tabellen er gitt under.
+
+|===
+|Risiko	|Konsekvenser	|S	|K	|R	|Tiltak
+
+|Får ikke tak i gode nok ressurser i tilstrekkelig grad
+{set:cellbgcolor:red}
+|Ikke god nok forankring. Ikke god nok kvalitet på resultatene.Huller på enkelte fagområder.
+|4	
+|4	
+|16	
+|Sikre at vi finner fagfolk på alle relevante områder. Sikre at disse avgis fra sine organisasjoner til arbeidet. Tidlig ha en plan for workshopene.
+
+|Samarbeidsproblemer mellom partene
+|Full stans i arbeidet
+
+|3	
+|5	
+|15	
+|Avklare mandat.
+
+
+|Ulikt kunnskapsnivå om OpenEHR blant fagressursene, skaper fremmedgjøring og dårlig klima.
+|Ikke god nok kvalitet, da fagfolka ikke klarer å bidra.	
+|3	
+|5	
+|15	
+|Opplæring i OpenEHR. Holde seg til de grunnleggende teknikkene, og unngå de vanskelige modelleringsmessige drøftingene i plenum.
+
+|Ikke tilstrekkelig kvalitet på grunnlaget (utkastene til arketyper/templater)
+{set:cellbgcolor!}
+|Forsinkelser i arbeidet
+|2	
+|4	
+|8	
+|Søke å avklare dette tidlig
+
+|Problemer med verktøy og metodikk
+|Kvalitet, tid og kostnad
+|2
+|4
+|8	
+|Verifisere dette tidlig
+|===
+
+
+
+
+Risiko:: Hvilke mulige risikoer ser vi for oss at kan inntreffe.
+Konsekvenser:: Kort forklaring av mulige konsekvenser dersom risiko inntreffer
+Område:: Område berørt (Kostnad, Tid, Prosjektomfang, Løsningskvalitet, Omdømme, Finansiering)
+Sannsynlighetsgrad:: Hvor stor er sannsynligheten for at dette vil inntreffe?
+	
+    . Meget liten: Vil ikke oppstå
+.  Liten: Lite sannsynlig vil oppstå
+.  Moderat: Vil kunne oppstå
+.  Stor: Er sannsynlig at dette vil oppstå
+.  Svært stor: Vil oppstå med stor sannsynlighet
+
+Konsekvensgrad:: Hvilken konsekvens får det om dette inntreffer?
+	
+. Ubetydelig: Ingen skade
+.  Lav: Skaper små problemer
+.  Moderat: Skaper problemer av en viss betydning
+. Alvorlig: Skaper store problemer for prosjekt eller løsning
+. Svært alvorlig: Stans i prosjektet eller drift av løsningen
+
+Risikoprodukt:: Produkt av sannsynlighet og konsekvens, brukes til å vurdere samlet betydning av en risiko. Samlet betydning klassifiseres i fargekoder som følger:
+
+* 1-6 Grønn
+* 7-14 Gul
+* 15-25 Rød
+
+Tiltak:: Mulig løsninger for å forhindre at mulige risikoområder inntreffer, eller for å redusere konsekvensene hvis de inntreffer.
+
+
+
+=== Kritiske suksessfaktorer
+
+*	Kvalitet på underlag
+*	Samarbeidet i prosjektet
+*	Verktøy og metodikk
+*	Holde en praktisk profil og fokus – lage noe nyttig og brukbart
+
+
+== Budsjett og økonomiske rammer
+
+Prosjektet gjennomføres som en dugnad, der partene selv dekker egne ressurser og egne kostnader.

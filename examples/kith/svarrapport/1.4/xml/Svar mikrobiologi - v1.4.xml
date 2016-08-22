@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+	<Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin"/>
+	<MIGversion>v1.4 2012-02-15</MIGversion>
+	<GenDate V="2015-09-04T08:57:23"/>
+	<MsgId>7a51bc25-0a66-4a0d-9438-85adc01ad904</MsgId>
+	<ServReport>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-09-04T08:57:12"/>
+		<Status V="F" DN="Endelig rapport"/>
+		<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+		<ServProvId>da095fcf-b7bd-4d37-b95a-e1bf330016ed</ServProvId>
+		<ServReq>
+			<ServType V="N" DN="Ny"/>
+			<IssueDate V="2015-08-31T13:16:00"/>
+			<MsgDescr V="MBIO" DN="Mikrobiologi"/>
+			<Id>da095fcf-b7bd-4d37-b95a-e1bf330016ed</Id>
+			<IdByServProvider>c1a6144b-c7bd-4708-9533-05f26cdb8358</IdByServProvider>
+		</ServReq>
+		<Patient>
+			<Name>Danser, Line</Name>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-08-30T13:55:00"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="U" DN="Urin"/>
+				<Number>1</Number>
+				<IdByServProvider>1234567890</IdByServProvider>
+			</AnalysedSubject>
+			<ResultItem>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU08592" S="2.16.578.1.12.4.1.1.7280" DN="U-Bakterier"/>
+				</Investigation>
+				<IdResultItem>186530651</IdResultItem>
+				<RefAnalysedSubject>1234567890</RefAnalysedSubject>
+				<Accredited V="true"/>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>Us-Pneumokokk antigen</TextResultValue>
+					<TextCode V="NPU29583" S="2.16.578.1.12.4.1.1.7280" DN="Us-Salmonella dyrkning"/>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id S="2.16.578.1.12.4.1.1.8212" OT="Identifikasjon"/>
+				</Investigation>
+				<InvDate V="2015-08-30T13:55:00"/>
+				<IdResultItem>186668073</IdResultItem>
+				<RefIdResultItem>186530651</RefIdResultItem>
+				<RefAnalysedSubject>1234567890</RefAnalysedSubject>
+				<Accredited V="false"/>
+				<ResultItem>
+					<TextResult>
+						<Heading V="LR" DN="Laboratorieresultat"/>
+						<TextResultValue>Rikelig vekst</TextResultValue>
+					</TextResult>
+					<ServType V="N" DN="Ny"/>
+					<Investigation>
+						<Id S="2.16.578.1.12.4.1.1.8212" OT="Mengde"/>
+					</Investigation>
+					<InvDate V="2015-08-30T13:55:00"/>
+					<IdResultItem>186579475</IdResultItem>
+					<RefAnalysedSubject>1234567890</RefAnalysedSubject>
+					<Accredited V="false"/>
+				</ResultItem>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextResultValue>0.25</TextResultValue>
+					<TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv"/>
+					<Unit>mg/L</Unit>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU06034" S="2.16.578.1.12.4.1.1.7280" DN="Us-Klindamycin"/>
+				</Investigation>
+				<IdResultItem>186667600</IdResultItem>
+				<RefIdResultItem>186668073</RefIdResultItem>
+				<RefAnalysedSubject>1234567890</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextResultValue>0.25</TextResultValue>
+					<TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv"/>
+					<Unit>mg/L</Unit>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU06050" S="2.16.578.1.12.4.1.1.7280" DN="Us-Erytromycin"/>
+				</Investigation>
+				<IdResultItem>186667601</IdResultItem>
+				<RefIdResultItem>186668073</RefIdResultItem>
+				<RefAnalysedSubject>1234567890</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextResultValue>0.25</TextResultValue>
+					<TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv"/>
+					<Unit>mg/L</Unit>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU06008" S="2.16.578.1.12.4.1.1.7280" DN="Us-Penicillin G"/>
+				</Investigation>
+				<IdResultItem>186667602</IdResultItem>
+				<RefIdResultItem>186668073</RefIdResultItem>
+				<RefAnalysedSubject>1234567890</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextResultValue>0.25</TextResultValue>
+					<TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv"/>
+					<Unit>mg/L</Unit>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU06029" S="2.16.578.1.12.4.1.1.7280" DN="Us-Penicillin V"/>
+				</Investigation>
+				<IdResultItem>186667603</IdResultItem>
+				<RefIdResultItem>186668073</RefIdResultItem>
+				<RefAnalysedSubject>1234567890</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextResultValue>0.25</TextResultValue>
+					<TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv"/>
+					<Unit>mg/L</Unit>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU07434" S="2.16.578.1.12.4.1.1.7280" DN="Us-Tetrasyklin"/>
+				</Investigation>
+				<IdResultItem>186667604</IdResultItem>
+				<RefIdResultItem>186668073</RefIdResultItem>
+				<RefAnalysedSubject>1234567890</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="RSB" DN="Resistensbestemmelse"/>
+					<TextResultValue>0.25</TextResultValue>
+					<TextCode V="S" S="2.16.578.1.12.4.1.1.8271" DN="Sensitiv"/>
+					<Unit>mg/L</Unit>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU07436" S="2.16.578.1.12.4.1.1.7280" DN="Us-Trimetoprim-Sulfametoksazol"/>
+				</Investigation>
+				<IdResultItem>186667605</IdResultItem>
+				<RefIdResultItem>186668073</RefIdResultItem>
+				<RefAnalysedSubject>1234567890</RefAnalysedSubject>
+			</ResultItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk mikrobiologi</Name>
+						<Id>91843</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Oslo legevakt - Sentrum</Name>
+					<Id>2474</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Legevakttjeneste</Name>
+						<Id>50073</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</Requester>
+	</ServReport>
+</Message>

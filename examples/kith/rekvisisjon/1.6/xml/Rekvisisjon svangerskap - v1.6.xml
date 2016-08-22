@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15" xmlns:kith="http://www.kith.no/xmlstds" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/rekvisisjon/2012-02-15 Rekvisisjon-v1.6.xsd">
+	<Type V="REQ_LAB" DN="Rekvisisjon-Laboratoriemedisin"/>
+	<MIGversion>v1.6 2012-02-15</MIGversion>
+	<GenDate V="2015-05-19T08:19:44"/>
+	<MsgId>8C9D12AF-F226-4476-AC28-F4BB0D182D5A</MsgId>
+	<ServReq>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-05-19T08:13:15"/>
+		<MsgDescr V="CLIN" DN="Medisinsk biokjemi"/>
+		<Id>0735e345-d993-41fd-8d3d-3f5d37204af6</Id>
+		<ServProvId>a5978893-9486-40bf-bc9f-861c861b23ed</ServProvId>
+		<RequestedPrioReport V="N" DN="Normal"/>
+		<Patient>
+			<Name>Danser, Line</Name>
+			<OffId>13116900216</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<InfItem>
+				<Observation>
+					<Description>gravid</Description>
+				</Observation>
+				<Type V="OPPL" DN="Klinisk opplysning"/>
+			</InfItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>Nordlandssykehuset HF</Name>
+					<Id>13</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk biokjemi</Name>
+						<Id>91846</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Kattskinnet legesenter</Name>
+					<Id>91096</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>
+				</Inst>
+			</HCP>
+		</Requester>
+		<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>Triglyserid: Fastende.</TextResultValue>
+		</ReasonAsText>
+		<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>FSH: Anfør siste menstrasjon 1. dag: 2 mai</TextResultValue>
+		</ReasonAsText>
+		<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>Digitoksin: Dosering og timer siden siste dose: Vet ikke</TextResultValue>
+		</ReasonAsText>
+		<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>Svangerskap kontrollprøve: Tidligere positiv prøve: JA</TextResultValue>
+		</ReasonAsText>
+		<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>Svangerskap kontrollprøve: Rh(D)neg skal ta kontrollprøve i uke 32 og uke 36. Se Labhåndboka! Svangerskapsuke 20</TextResultValue>
+		</ReasonAsText>
+		<ReasonAsText>
+			<Heading V="BG" DN="Begrunnelse"/>
+			<TextResultValue>Svangerskap 1. prøve: Iht. veileder for transf.tjenesten bør 1. prøve tas mellom uke 12 og 16. Uke 11</TextResultValue>
+		</ReasonAsText>
+		<Comment>
+			<TextResultValue>Receiving system: Dwlab. </TextResultValue>
+		</Comment>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<!--<Id V="33" S="2.16.578.1.12.4.1.1.8213" DN="Hemoglobin" OT="Hemoglobin"/>-->
+				<Id V="NOR05172" S="2.16.578.1.12.4.1.1.7280" DN="B-Hemoglobin"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-19T08:16:10"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="B" DN="Blod"/>
+				<IdByRequester>4CS0H8LCF-0000050543</IdByRequester>
+				<IdByServProv>0127900226</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<!--<Id V="1052" S="2.16.578.1.12.4.1.1.8213" DN="PT-INR" OT="PT-INR"/>-->
+				<Id V="NPU01685" S="2.16.578.1.12.4.1.1.7280" DN="P-INR"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-19T08:16:10"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="B" DN="Blod"/>
+				<IdByRequester>4CS0H8LCF-0000050543</IdByRequester>
+				<IdByServProv>0027900226</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Investigation>
+				<!--<Id V="11" S="2.16.578.1.12.4.1.1.8213" DN="Triglyserid" OT="Triglyserid"/>-->
+				<Id V="NPU18106" S="2.16.578.1.12.4.1.1.7280" DN="Us-Triglyserid"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="210" S="2.16.578.1.12.4.1.1.8213" DN="FSH" OT="FSH"/>-->
+				<Id V="NOR05859" S="2.16.578.1.12.4.1.1.7280" DN="Us-FSH"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="54" S="2.16.578.1.12.4.1.1.8213" DN="Digitoksin" OT="Digitoksin"/>-->
+				<Id V="NPU29867" S="2.16.578.1.12.4.1.1.7280" DN="P-Digitoksin"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-19T08:16:10"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="S" DN="Serum"/>
+				<IdByRequester>4CS0H8LCF-0000050543</IdByRequester>
+				<IdByServProv>0027900226</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+		<ReqInvestigation>
+			<ServType V="N" DN="Ny"/>
+			<Comment>Svangerskapskontroll</Comment>
+			<Investigation>
+				<!--<Id V="8602" S="2.16.578.1.12.4.1.1.8213" DN="Blodtypeantistoffer" OT="Blodtypeantistoffer"/>-->
+				<Id V="NPU01945" S="2.16.578.1.12.4.1.1.7280" DN="Ery-Blodtyping AB0"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="8600" S="2.16.578.1.12.4.1.1.8213" DN="AB0" OT="AB0"/>-->
+				<Id V="NPU01945" S="2.16.578.1.12.4.1.1.7280" DN="Ery-Blodtyping AB0"/>
+			</Investigation>
+			<Investigation>
+				<!--<Id V="8601" S="2.16.578.1.12.4.1.1.8213" DN="Rh(D)" OT="Rh(D)"/>-->
+				<Id V="NPU19182" S="2.16.578.1.12.4.1.1.7280" DN="DNA-RHD"/>
+			</Investigation>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-05-19T08:16:10"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="B" DN="Blod"/>
+				<IdByRequester>4CS0H8LCF-0000050543</IdByRequester>
+				<IdByServProv>27900226</IdByServProv>
+			</AnalysedSubject>
+		</ReqInvestigation>
+	</ServReq>
+</Message>

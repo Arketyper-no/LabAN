@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message xmlns="http://www.kith.no/xmlstds/labsvar/2012-02-15" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kith.no/xmlstds/labsvar/2012-02-15 svar-v1.4.xsd">
+	<Type V="SVAR_LAB" DN="Svarrapport-Laboratoriemedisin"/>
+	<MIGversion>v1.4 2012-02-15</MIGversion>
+	<GenDate V="2015-09-02T16:35:35"/>
+	<MsgId>F85601A6-4663-4AA3-8237-86662A60C73F</MsgId>
+	<ServReport>
+		<ServType V="N" DN="Ny"/>
+		<IssueDate V="2015-09-02T16:32:55"/>
+		<Status V="F" DN="Endelig rapport"/>
+		<MsgDescr V="CLIN" DN="Medisinsk biokjemi"/>
+		<ServProvId>231d8f18-1a2e-4c38-9035-68c7641958ff</ServProvId>
+		<ServReq>
+			<ServType V="N" DN="Ny"/>
+			<IssueDate V="2015-09-02T16:00:23"/>
+			<MsgDescr V="CLIN" DN="Medisinsk biokjemi"/>
+			<Id>8449B5D3-EF42-490A-8DE3-DFAD6C6BDC28</Id>
+			<RequestedPrioReport V="NORM" DN="Normal"/>
+			<IdByServProvider>5c95c2a8-33ee-45f7-8da9-e6b019cfd8b5</IdByServProvider>
+		</ServReq>
+		<Patient>
+			<Name>Telokk, Gry</Name>
+			<OffId>12057900499</OffId>
+			<TypeOffId V="FNR" DN="Fødselsnummer"/>
+			<Address>
+				<Type V="H" DN="Bostedsadresse"/>
+				<StreetAdr>Lungegaardsbakken 13</StreetAdr>
+				<PostalCode>5020</PostalCode>
+				<City>Bergen</City>
+			</Address>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-09-02T16:07:59"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="B" DN="Blod"/>
+				<IdByServProvider>LKB2701269603</IdByServProvider>
+			</AnalysedSubject>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-09-02T16:07:59"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="P" DN="Plasma"/>
+				<IdByServProvider>0937801731</IdByServProvider>
+			</AnalysedSubject>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-09-02T16:07:59"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="S" DN="Serum"/>
+				<IdByServProvider>IMM2701269601</IdByServProvider>
+			</AnalysedSubject>
+			<AnalysedSubject>
+				<CollectedSample>
+					<CollectedDate V="2015-09-02T16:07:59"/>
+				</CollectedSample>
+				<TypeCoded S="2.16.578.1.12.4.1.1.8351" V="F" DN="Fæces"/>
+				<IdByServProvider>SBK2701269606</IdByServProvider>
+			</AnalysedSubject>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="15.0" U="g/dL"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>11,7 - 15,3</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NOR05172" S="2.16.578.1.12.4.1.1.7280" DN="B-Hemoglobin"/>
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:12"/>
+				<IdResultItem>2701269603_101130</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>LKB2701269603</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="92" U="fL"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>82 - 98</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU01944" S="2.16.578.1.12.4.1.1.7280" DN="Ery-MCV"/>
+					<!--<Id V="MCV" S="2.16.578.1.12.4.1.1.8212" DN="E-MCV" OT="E-MCV"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:12"/>
+				<IdResultItem>2701269603_101150</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>LKB2701269603</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="3.6" U="10E9/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>3,5 - 11,0</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU02593" S="2.16.578.1.12.4.1.1.7280" DN="B-Leukocytter"/>
+					<!--<Id V="LPK" S="2.16.578.1.12.4.1.1.8212" DN="B-Leukocytter" OT="B-Leukocytter"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:12"/>
+				<IdResultItem>2701269603_101110</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>LKB2701269603</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="1.2" U="10E9/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>1,7 - 8,2</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU02902" S="2.16.578.1.12.4.1.1.7280" DN="B-Nøytrofile granulocytter"/>
+					<!--<Id V="SEG" S="2.16.578.1.12.4.1.1.8212" DN="Lk-Nøytr. gran." OT="Lk-Nøytr. gran."/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:12"/>
+				<DevResultInd V="2" DN="Under nedre referansegrense"/>
+				<IdResultItem>2701269603_101220</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>LKB2701269603</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="1.0" U="10E9/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>0,7 - 5,3</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU02636" S="2.16.578.1.12.4.1.1.7280" DN="B-Lymfocytter"/>
+					<!--<Id V="LYMF" S="2.16.578.1.12.4.1.1.8212" DN="Lk-Lymfocytter" OT="Lk-Lymfocytter"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:12"/>
+				<IdResultItem>2701269603_101230</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>LKB2701269603</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="0.10" U="10E9/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>0,04 - 1,30</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU02840" S="2.16.578.1.12.4.1.1.7280" DN="B-Monocytter"/>
+					<!--<Id V="LKMONO" S="2.16.578.1.12.4.1.1.8212" DN="Lk-Monocytter" OT="Lk-Monocytter"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:12"/>
+				<IdResultItem>2701269603_101240</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>LKB2701269603</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="0.2" U="10E9/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>0,0 - 0,7</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU01933" S="2.16.578.1.12.4.1.1.7280" DN="B-Eosinofile"/>
+					<!--<Id V="EOS" S="2.16.578.1.12.4.1.1.8212" DN="Lk-Eos. gran." OT="Lk-Eos. gran."/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:12"/>
+				<IdResultItem>2701269603_101250</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>LKB2701269603</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="0.0" U="10E9/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>0,0 - 0,3</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU01349" S="2.16.578.1.12.4.1.1.7280" DN="B-Basofile"/>
+					<!--	<Id V="BASO" S="2.16.578.1.12.4.1.1.8212" DN="Lk-Baso. gran." OT="Lk-Baso. gran."/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:12"/>
+				<IdResultItem>2701269603_101260</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>LKB2701269603</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="236" U="10E9/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>165 - 387</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU03568" S="2.16.578.1.12.4.1.1.7280" DN="B-Trombocytter"/>
+					<!--	<Id V="TPK" S="2.16.578.1.12.4.1.1.8212" DN="B-Trombocytter" OT="B-Trombocytter"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<IdResultItem>2701269603_101180</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>LKB2701269603</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="32.0" U="pg"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>31,5 - 35,5</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU26879" S="2.16.578.1.12.4.1.1.7280" DN="B-RetHb"/>
+					<!--	<Id V="CHR" S="2.16.578.1.12.4.1.1.8212" DN="Reticulocytt HB" OT="Reticulocytt HB"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<IdResultItem>2701269603_101330</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>LKB2701269603</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="20.0" U="µmol/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>&lt; 15,0</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU04073" S="2.16.578.1.12.4.1.1.7280" DN="P-Homocystein"/>
+					<!--<Id V="HCY" S="2.16.578.1.12.4.1.1.8212" DN="P-Homocystein" OT="P-Homocystein"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<DevResultInd V="1" DN="Over øvre referansegrense"/>
+				<IdResultItem>2701269661_102490</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>0937801731</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="452" U="pmol/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>175 - 700</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU01700" S="2.16.578.1.12.4.1.1.7280" DN="P-Vit B12 (Kobalamin, total)"/>
+					<!--<Id V="KOBAL" S="2.16.578.1.12.4.1.1.8212" DN="S-Kobalaminer" OT="S-Kobalaminer"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<IdResultItem>2701269601_102430</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>0937801731</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="10.0" U="nmol/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>&gt; 8,0</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU02070" S="2.16.578.1.12.4.1.1.7280" DN="P-Vit. B9 (Folsyre)"/>
+					<!--<Id V="FOLAT" S="2.16.578.1.12.4.1.1.8212" DN="S-Folater" OT="S-Folater"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<IdResultItem>2701269601_102420</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>0937801731</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="52" U="ug/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>18 - 240</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU19763" S="2.16.578.1.12.4.1.1.7280" DN="P-Ferritin"/>
+					<!--<Id V="FERR" S="2.16.578.1.12.4.1.1.8212" DN="S-Ferritin" OT="S-Ferritin"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<IdResultItem>2701269601_102410</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>0937801731</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="200" U="µmol/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>45 - 90</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU04998" S="2.16.578.1.12.4.1.1.7280" DN="P-Kreatinin"/>
+					<!--<Id V="KREAT" S="2.16.578.1.12.4.1.1.8212" DN="S-Kreatinin" OT="S-Kreatinin"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<DevResultInd V="1" DN="Over øvre referansegrense"/>
+				<IdResultItem>2701269601_101870</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>0937801731</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="25" U="mL/min/1,73m2"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NOR15245" S="2.16.578.1.12.4.1.1.7280" DN="Pt-GFR estimert"/>
+					<!--	<Id V="EGFR" S="2.16.578.1.12.4.1.1.8212" DN="Estimert GFR" OT="Estimert GFR"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:15"/>
+				<IdResultItem>2701269601_101860</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>0937801731</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<ArithmeticComp V="LT" DN="Mindre"/>
+					<NumResultValue V="5" U="nmol/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>&lt; 20</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU04874" S="2.16.578.1.12.4.1.1.7280" DN="B-Kadmium"/>
+					<!--<Id V="CD" S="2.16.578.1.12.4.1.1.8212" DN="B-Kadmium" OT="B-Kadmium"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:15"/>
+				<IdResultItem>2701269640_111970</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>LKB2701269603</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="65" U="%"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>&gt; 80</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU18597" S="2.16.578.1.12.4.1.1.7280" DN="P-Antitrombinaktivitet, FIIa-basert"/>
+					<!--<Id V="AT3" S="2.16.578.1.12.4.1.1.8212" DN="P-Antitromb.3" OT="P-Antitromb.3"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<DevResultInd V="2" DN="Under nedre referansegrense"/>
+				<IdResultItem>2701269660_102920</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<StatusChangeDate V="2015-09-02T16:32:55"/>
+				<MedicalValidationDate V="2015-09-02T16:32:55"/>
+				<RefAnalysedSubject>0937801731</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="23" U="%"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>&gt; 70</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU18200" S="2.16.578.1.12.4.1.1.7280" DN="P-Protein C aktivitet"/>
+					<!--	<Id V="PROTC" S="2.16.578.1.12.4.1.1.8212" DN="P-Protein C akt." OT="P-Protein C akt."/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<DevResultInd V="2" DN="Under nedre referansegrense"/>
+				<IdResultItem>2701269660_102930</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>0937801731</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="60" U="%"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>&gt; 65</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU20012" S="2.16.578.1.12.4.1.1.7280" DN="P-Protein S (fritt)"/>
+					<!--	<Id V="PROTSF" S="2.16.578.1.12.4.1.1.8212" DN="P-Protein S fri" OT="P-Protein S fri"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<DevResultInd V="2" DN="Under nedre referansegrense"/>
+				<IdResultItem>2701269660_102980</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<StatusChangeDate V="2015-09-02T16:32:55"/>
+				<MedicalValidationDate V="2015-09-02T16:32:55"/>
+				<RefAnalysedSubject>0937801731</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>Genfeil påvist heterozygot</TextResultValue>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU19270" S="2.16.578.1.12.4.1.1.7280" DN="DNA-Faktor V Leiden"/>
+					<!--	<Id V="LEIDEN" S="2.16.578.1.12.4.1.1.8212" DN="Faktor V leidenmutasjon" OT="Faktor V leidenmutasjon"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<IdResultItem>2701269640_115750</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<StatusChangeDate V="2015-09-02T16:32:55"/>
+				<MedicalValidationDate V="2015-09-02T16:32:55"/>
+				<RefAnalysedSubject>LKB2701269603</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>Normal</TextResultValue>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU19269" S="2.16.578.1.12.4.1.1.7280" DN="DNA-Protrombin G20210A"/>
+					<!--<Id V="PROTRO" S="2.16.578.1.12.4.1.1.8212" DN="Protrombinmutasjon" OT="Protrombinmutasjon"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<IdResultItem>2701269640_115760</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<StatusChangeDate V="2015-09-02T16:32:55"/>
+				<MedicalValidationDate V="2015-09-02T16:32:55"/>
+				<RefAnalysedSubject>LKB2701269603</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>Negativ, se kommentar</TextResultValue>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<!--<Id V="LUPUS" S="2.16.578.1.12.4.1.1.8212" DN="P-Lupus Antikoagulant"/>-->
+					<Id V="NPU02616" S="2.16.578.1.12.4.1.1.7280" DN="P-Lupus-antikoagulant"/>
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<Comment>Ikke påvist Lupus antikoagulant. Ved fortsatt mistanke om Antifosfolipid syndrom, send serum til undersøkelse av anti-kardiolipin og anti-beta2glykoprotein 1 til Avd.for immunologi og transfusjonsmedisin, Haukeland universitetssjukehus.</Comment>
+				<IdResultItem>2701269660_114180</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<StatusChangeDate V="2015-09-02T16:32:55"/>
+				<MedicalValidationDate V="2015-09-02T16:32:55"/>
+				<RefAnalysedSubject>0937801731</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="1.17" U="0"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>&lt; 1,28</Descr>
+				</RefInterval>
+				<Investigation>
+					<!--<Id V="DRVVT" S="2.16.578.1.12.4.1.1.8212" DN="dRVVT" OT="dRVVT"/>-->
+					<Id V="NPU22255" S="2.16.578.1.12.4.1.1.7280" DN="P-Lupus antikoagulant RVVT"/>
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:16"/>
+				<IdResultItem>2701269660_114190</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<StatusChangeDate V="2015-09-02T16:32:55"/>
+				<MedicalValidationDate V="2015-09-02T16:32:55"/>
+				<RefAnalysedSubject>0937801731</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="0.1" U="ug/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>&lt; 4,0</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU08669" S="2.16.578.1.12.4.1.1.7280" DN="P-PSA"/>
+					<!--<Id V="PSA" S="2.16.578.1.12.4.1.1.8212" DN="S-PSA" OT="S-PSA"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<IdResultItem>2701269601_102440</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>IMM2701269601</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="150" U="10E3 IU/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>&lt; 120</Descr>
+				</RefInterval>
+				<Investigation>
+					<Id V="NPU02482" S="2.16.578.1.12.4.1.1.7280" DN="P-IgE"/>
+					<!--<Id V="IGE" S="2.16.578.1.12.4.1.1.8212" DN="S-IgE" OT="S-IgE"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<DevResultInd V="1" DN="Over øvre referansegrense"/>
+				<IdResultItem>2701269665_103090</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>2701269665</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<TextResult>
+					<Heading V="LR" DN="Laboratorieresultat"/>
+					<TextResultValue>Grense</TextResultValue>
+				</TextResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU19617" S="2.16.578.1.12.4.1.1.7280" DN="P-Matvarepanel FX5 IgE"/>
+					<!--	<Id V="FX5" S="2.16.578.1.12.4.1.1.8212" DN="S-Matvareallergi" OT="S-Matvareallergi"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<IdResultItem>2701269665_103100</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>IMM2701269601</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="250" U="µmol/L"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<RefInterval>
+					<Descr>300 - 600</Descr>
+				</RefInterval>
+				<Investigation>
+					<!--<Id V="ETOSUX" S="2.16.578.1.12.4.1.1.8212" DN="S-Etosuximid" OT="S-Etosuximid"/>-->
+					<Id V="NPU01999" S="2.16.578.1.12.4.1.1.7280" DN="P-Etosuksimid"/>
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<Comment>Referanseområdet gjelder epilepsibehandling, men er ikke veldefinert
+</Comment>
+				<DevResultInd V="2" DN="Under nedre referansegrense"/>
+				<IdResultItem>2701269632_900194</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<StatusChangeDate V="2015-09-02T16:32:55"/>
+				<MedicalValidationDate V="2015-09-02T16:32:55"/>
+				<RefAnalysedSubject>IMM2701269601</RefAnalysedSubject>
+			</ResultItem>
+			<ResultItem>
+				<NumResult>
+					<NumResultValue V="20" U="mg/kg"/>
+				</NumResult>
+				<ServType V="N" DN="Ny"/>
+				<Investigation>
+					<Id V="NPU26814" S="2.16.578.1.12.4.1.1.7280" DN="F-Kalprotektin"/>
+					<!--<Id V="KALPRO" S="2.16.578.1.12.4.1.1.8212" DN="F-Kalprotektin" OT="F-Kalprotektin"/>-->
+				</Investigation>
+				<InvDate V="2015-09-02T16:29:13"/>
+				<IdResultItem>2701269606_110280</IdResultItem>
+				<StatusInvestigation V="3" DN="Endelig"/>
+				<RefAnalysedSubject>SBK2701269606</RefAnalysedSubject>
+			</ResultItem>
+		</Patient>
+		<ServProvider>
+			<HCP>
+				<Inst>
+					<Name>St. Olavs Hospital</Name>
+					<Id>59</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<Dept>
+						<Name>Medisinsk biokjemi</Name>
+						<Id>91123</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</Dept>
+				</Inst>
+			</HCP>
+		</ServProvider>
+		<Requester>
+			<HCP>
+				<Inst>
+					<Name>Kattskinnet legesenter</Name>
+					<Id>91096</Id>
+					<TypeId V="HER" DN="HER-id"/>
+					<HCPerson>
+						<Name>Rita Lin</Name>
+						<Id>91101</Id>
+						<TypeId V="HER" DN="HER-id"/>
+					</HCPerson>
+				</Inst>
+			</HCP>
+		</Requester>
+	</ServReport>
+</Message>

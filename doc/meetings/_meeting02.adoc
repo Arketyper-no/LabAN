@@ -1,20 +1,73 @@
-= Meeting 2 
-== About
-=== Tid og sted	
-Tid:: Tirsdag 23.august kl. 1430 - 1600
-Sted:: Skype meeting
+// skrevet til Asciidoc av Bjørn basert på Ancas notater i word 
+= 23.august 2016 - Prosjektmøte LAB-arketyper
 
-=== Deltagere
+== Tid og sted 
 
-* Jon Tysdahl Fürst 
-* Bjørn Næss DIPS ASA
-* Anca Heyd DIPS ASA
-* Ole Martin Ryen Sand DIPS ASA
-* Silje Ljosland Bakke Nasjonal IKT
-* Jan-Arne Ludvigsen, DIPS ASA
-* Jon Tore Valand Helse Bergen
-* Vebjørn Arntzen OUS
-* Ian McNicoll
+Møtedato:: 23.08.2016 14.30
+Plassering:: Skype-møte
+ 
+Deltakere::
 
-== Begrunnelse og mål for møtet 
-Follow up meeting after kick-off last week. Prepare project mandate and plan the next steps. 
+* Jan-Arne Ludvigsen (Møtearrangør), DIPS ASA
+* Bjørn Næss, DIPS ASA
+* Ole Martin Ryen Sand, DIPS ASA
+* Jon Tysdahl, Fürst
+* Silje Ljosland Bakke, Nasjonal IKT
+* John Tore Valand, Nasjonal IKT
+* Vebjørn Arntzen, Nasjonal IKT
+* Anca Heyd,DIPS ASA
+ 
+== Notater
+=== Gjennomgang av mandatet
+Endringer er skrevet direkte inn i GitHub
+ 
+=== Bruk av GitHub
+Behov for en liten bruksanvisning - Bjørn?
+ 
+=== Prosjektgjennomføring
+ 
+"Arbeidsgruppen" er forholdsvis liten. Vil man kunne dekke alle behovene? 
+
+Tiltak: 
+
+* Legge opp til at man trekker inn annen ekspertise ved behov/konrete problemstillinger.
+* Behov for å ha en patolog som fagperson - Jan Arne tar kontakt med Regionalt gruppe for arketyper i Helse Nord (Rune Pedersen). Nasjonal IKT har kontakt til en patolog i Helse Vest som har vært involvert i arketypebygging på histopatologi. Vedkommende kan trekkes inn og gi verdifulle innspill men kan antageligvis ikke være med i WS.
+ 
+ 
+Første WS 14. september - Innledning mapping mot KITH melding
+
+Arbeidet foregår på norsk. Nasjonalt IKT står for evt. nødvendige oversettelser mot internasjonalt nivå. 
+ 
+Totalt legges opp til 
+
+* 7 WS hver 14. dag på onsdager i oddetallsuker etter uke 37
+* 1+2 labssvar - mapping mot KITH
+* 3+4 rekvisisjon
+* 5+6 interne prosesser
+* 7 oppsummering
+ 
+Første og andre WS fysisk, i Oslo i DIPS sine lokaler, etter hvert på lync
+ 
+* Anca leder og fasiliterer WS
+* John leder prosjektgruppemøtene
+* Jan Arne ordner det organisatoriske
+ 
+Neste møte i prosjektgruppen er 12. september. Jan Arne gir tidligere tilbakemelding om det ikke lykkes å finne en ressurs patolog.
+ 
+=== Gjennomgang av risiko
+Det er identifisert en ny risiko: planen er rimelig ambisiøs og det kan oppstå utfordringer i forhold til å rpioritere ette arbeidet inn i en travel hverdag. Fysiske møter vil også gi en stor belastning for de som må reise. Tiltak: Planlegge møter på Lync etter hvert
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

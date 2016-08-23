@@ -111,7 +111,7 @@ Det antas at de foreliggende utkastene til arketyper har en rimelig god kvalitet
 
 Utviklingsarbeidet vil legges opp som en serie med workshops, der de ulike tema håndteres i en fornuftig rekkefølge.
 
-Første workshop vil bli i uke 37 og vil ha mapping mot KITH-svarbrev som utgangspunkt.
+Første workshop vil bli i uke 37 og vil ha mapping mot KITH-svarbrev som utgangspunkt. Trenger sikkert ytterligere to workshops på dette. 
 
 Deretter vil rekvirering ha fokus, men man til slutt har fokus på det lab-interne.
 
@@ -194,7 +194,6 @@ Risikoprodukt:: Produkt av sannsynlighet og konsekvens, brukes til å vurdere sa
 * 15-25 Rød
 
 Tiltak:: Mulig løsninger for å forhindre at mulige risikoområder inntreffer, eller for å redusere konsekvensene hvis de inntreffer.
-
 
 
 === Kritiske suksessfaktorer

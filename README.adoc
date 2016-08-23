@@ -3,13 +3,13 @@
 
 == ENDRINGSLOGG:
 
-Versjon: 0.1
-Dato: 17.8.2016
+Versjon: 0.2
+Dato: 23.08.2016
 
 |===
 |Dato	|Versjon	|Endret av	|Punkt / side	|Endring / kommentar
-|17.8.2016 |	0.1	|JT	|Hele	|Første utkast
-|23.08.2016|    0.2 |BNA|Hele   |Andre utkast - etter møte 23.aug 
+|17.08.2016 |	0.1	|JT	|Hele	|Første utkast
+|23.08.2016|    0.2 |BNA|Hele   |Endringer etter møte 23.aug 
 |===
 
 == Bakgrunn
@@ -111,9 +111,12 @@ Det antas at de foreliggende utkastene til arketyper har en rimelig god kvalitet
 
 Utviklingsarbeidet vil legges opp som en serie med workshops, der de ulike tema håndteres i en fornuftig rekkefølge.
 
-Første workshop vil bli i uke 37 og vil ha mapping mot KITH-svarbrev som utgangspunkt. Trenger sikkert ytterligere to workshops på dette. 
+Det legges opp til 7 workshops. Det vil si hver 14. dag på onsdager i oddetallsuker etter uke 37. Grovt fordelt vil disse ha følgende innhold: 
 
-Deretter vil rekvirering ha fokus, men man til slutt har fokus på det lab-interne.
+* 1+2 labssvar - mapping mot KITH
+* 3+4 rekvisisjon
+* 5+6 interne prosesser
+* 7 oppsummering
 
 
 == Suksessfaktorer og risikoområder

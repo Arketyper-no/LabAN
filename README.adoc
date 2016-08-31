@@ -3,12 +3,13 @@
 
 == ENDRINGSLOGG:
 
-Versjon: 0.1
-Dato: 17.8.2016
+Versjon: 0.2
+Dato: 23.08.2016
 
 |===
 |Dato	|Versjon	|Endret av	|Punkt / side	|Endring / kommentar
-|17.8.2016 |	0.1	|JT	|Hele	|Første utkast
+|17.08.2016 |	0.1	|JT	|Hele	|Første utkast
+|23.08.2016|    0.2 |BNA|Hele   |Endringer etter møte 23.aug 
 |===
 
 == Bakgrunn
@@ -24,7 +25,7 @@ Prosjektets navn er Laboratorie Arketyper for Norge, forkortet LabAN.
 ==	Målbilde
 
 === Formål
-Legge grunnlaget for utvikling av lab-systemer basert på OpenEHR i Norge. Utvikle og spre kunnskap om lab-arketyper i Norge.
+Legge grunnlaget for utvikling av epj-/labsystemer basert på OpenEHR i Norge. Utvikle og spre kunnskap om lab-arketyper i Norge.
 
 
 === Resultatmål
@@ -44,6 +45,16 @@ Innen utløpet av 2016 ha etablert:
 === OMFANG:
 Arbeidet skal dekke fagområdene rekvirering av lab-analyser, håndteringen i laboratoriet og håndtering av svarene. Det skal dekke alle disipliner innen lab.
 
+
+Laboratoriedispipliner som tas med i prosjektet: 
+
+* Medisinsk biokjemi 
+* Mikrobiologi 
+* Immunologi 
+* Patologi inkl. histologi og cytologi 
+* Klinisk farmakologi 
+
+
 === RAMMEBETINGELSER:
 Det finnes en rekke rammebetingelser som påvirker og regulerer det norske markedet, og sentrale her er:
 
@@ -52,10 +63,18 @@ Det finnes en rekke rammebetingelser som påvirker og regulerer det norske marke
 *	KITH-meldinger
 *	Nasjonalt laboratoriekodeverk
 *	Andre relevante nasjonale kodeverk på Volven
+*   Forvaltningsregimet for openEHR arketyper i Norge (arketyper.no)
 
 
-=== AVGRENSNING:
-Mangler her….
+Dokumentasjon og resultater fra prosjektet skrives på norsk. 
+
+
+=== Avgrensning
+Laboratoriedisipliner som tas ut i prosjektperioden: 
+
+* Obduksjon
+* Biobank
+* Transfusjonsmedisin 
 
 ==	Prosjektorganisering
 Prosjektet styres og eies av DIPS og Fürst i samarbeid med Nasjonal IKT og andre.
@@ -65,54 +84,39 @@ Prosjektet har ikke noen styringsgruppe, men rapporterer til linjen hos DIPS og 
 
 Prosjektet vil ha en prosjektledelsesgruppe som møtes ca 2 ganger per måned i faste møter. I denne gruppen deltar:
 
-* Bjørn Næss, DIPS
-* Anca Heyd, DIPS
 * Jon Tysdahl, Fürst
 * Silje Ljosland Bakke, Nasjonal IKT
-* m.fl.
+* Vebjørn Arntzen, Nasjonal IKT 
+* John Tore Valand, Nasjonal IKT 
+* Anca Heyd, DIPS ASA 
+* Bjørn Næss, DIPS ASA
+* Ole-Martin Ryen Sand, DIPS ASA
+* Jan-Arne Ludvigsen, DIPS ASA
 
 En bredere gruppe med fagfolk vil bli trukket med i workshops for å drøfte det faglige. Denne gruppen med fagfolk omfatter:
 
-* Johan Bjerner, lege, Fürst
-* Torleif Trydal, lege, Fürst
+* Johan Bjerner, Lege, Fürst
+* Torleif Trydal, Lege, Fürst
+* Ole-Martin Ryen Sand, Bioingeniør, DIPS ASA
+* Anca Heyd, Lege, DIPS ASA
+* Jan-Arne Ludvigsen, DIPS ASA
 
-
-De viktigste beslutningene i prosjektet dreier seg om den faglige utforming av resultatene, og dette besluttes på lavest mulig nivå. Godkjenning av de faglige resultatene skjer i regi av Nasjonal IKT og/eller OpenEHR.
+De viktigste beslutningene i prosjektet dreier seg om den faglige utforming av resultatene, og dette besluttes på lavest mulig nivå. Godkjenning av de faglige resultatene skjer i regi av Nasjonal IKT og/eller OpenEHR. Redaksjonsutvalget for arketyper i NasjonalIKT vil sånn sett fungere som en referansegruppe for arbeidet. 
 
 === Prosjektadministrasjon
-Dokumenter i prosjektet deles gjennom prosjektområde på arketyper.no og en tilhørende Git, som settes opp av nasjonal IKT.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Dokumenter i prosjektet deles gjennom prosjektområde på arketyper.no og et tilhørende område på GIT https://github.com/Arketyper-no/LabAN[LabAN].
 
 == Gjennomføringsplan
-
-
-Det antas at de foreliggende utkastene har en rimelig god kvalitet og at større omarbeidinger av grunnlaget ikke er nødvendig.
+Det antas at de foreliggende utkastene til arketyper har en rimelig god kvalitet og at større omarbeidinger av grunnlaget ikke er nødvendig.
 
 Utviklingsarbeidet vil legges opp som en serie med workshops, der de ulike tema håndteres i en fornuftig rekkefølge.
 
-Første workshop vil bli i uke 37 og vil ha mapping mot KITH-svarbrev som utgangspunkt.
+Det legges opp til 7 workshops. Det vil si hver 14. dag på onsdager i oddetallsuker etter uke 37. Grovt fordelt vil disse ha følgende innhold: 
 
-Deretter vil rekvirering ha fokus, men man til slutt har fokus på det lab-interne.
-
-
-
-
-
-
+* 1+2 labssvar - mapping mot KITH
+* 3+4 rekvisisjon
+* 5+6 interne prosesser
+* 7 oppsummering
 
 
 == Suksessfaktorer og risikoområder
@@ -193,7 +197,6 @@ Risikoprodukt:: Produkt av sannsynlighet og konsekvens, brukes til å vurdere sa
 * 15-25 Rød
 
 Tiltak:: Mulig løsninger for å forhindre at mulige risikoområder inntreffer, eller for å redusere konsekvensene hvis de inntreffer.
-
 
 
 === Kritiske suksessfaktorer
